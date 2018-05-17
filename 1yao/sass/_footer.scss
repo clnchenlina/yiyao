@@ -1,0 +1,528 @@
+/*------footer-----------*/
+.y_foot {
+    color: #5E5E5E;
+    margin-top: 20px;
+    .ft_friendlylink {
+        @extend %wrap;
+        border: 1px solid #E6E6E6;
+        height: 168px;
+        overflow: hidden;
+        width: 1188px;
+        .ft_friendlylink {
+            border: 1px solid #E6E6E6;
+            height: 168px;
+            overflow: hidden;
+            width: 1188px;
+        }
+        .fri_tit {
+            background: #F8F8F8;
+            border-bottom: 1px solid #E6E6E6;
+            &:after{
+                @extend %clearboth;
+            }
+            li{
+                display: inline;
+                float: left;
+                width: 178px;
+                height: 33px;
+                border-right: 1px solid #E6E6E6;
+                font-size: 12px;
+                line-height: 33px;
+                text-align: center;
+                cursor: pointer;
+            }
+            .cur{
+                background: #fff;
+                font-weight: 700;
+                height: 34px;
+                margin-bottom: -1px;
+            }
+            
+        }
+        .fri_ct {
+            padding: 10px 0;
+        }
+        .flagship_store{
+            &:after{
+                @extend %clearboth;
+            }
+            
+            padding: 8px 0 15px 8px;
+            a{
+                float: left;
+                display: block;
+                background: url(http://s.maiyaole.com/images/201306/images/img_btm_logo.png) no-repeat;
+                width: 110px;
+                height: 46px;
+                text-indent: -9999px;
+                margin: 7px 8px 0 0;
+                opacity: .7;
+            }
+        }
+        .friendly {
+            display: none;
+            padding-top: 20px;
+            margin-left: 30px;
+            a{
+                display: block;
+                width: 128px;
+                height: 26px;
+                float: left;
+                color: #666;
+                margin: 0;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+}
+.ft_commit {
+    height: 180px;
+    margin-top: 80px;
+    text-align: center;
+    margin-bottom: 50px;
+    background-color: #f0f0f0;
+    overflow: hidden;
+    zoom: 1;
+    clear: both;
+    .ft_commit_div {
+        height: 168px;
+        margin: 0 auto;
+        overflow: hidden;
+        width: 1300px;
+        a{
+            width: 250px;
+            float: left;
+            margin: -14px 0 0 38px;
+            i{
+                width: 275px;
+                height: 115px;
+                display: block;
+                margin: 50px 0 20px 40px;
+                background: url(http://s.maiyaole.com/images/201306/images/icon_gonggaob.png) no-repeat left top;
+            }
+            .ic-yingsibz {
+                background-position: 11px 0;
+            }
+            .ic-pinpai {
+                background-position: -298px 0;
+            }
+            .ic-yaojian {
+                background-position: -620px 0;
+            }
+            .ic-yaojian {
+                background-position: -620px 0;
+            }
+        }
+        .c_4{
+            i{
+                margin-left: 80px;
+            }
+        }
+    }
+}
+.app_part {
+    width: 100%;
+    .app_part_con {
+        width: 1190px;
+        margin: auto;
+        overflow: hidden;
+    }
+    .app_part_ul {
+        .no_margin{
+            margin: 0;
+        }
+        li{
+            width: 343px;
+            height: 108px;
+            background: #f0f0f0;
+            padding: 20px 0 20px 40px;
+            float: left;
+            margin-left: 20px;
+            img{
+                width: 110px;
+                height: 110px;
+                float: left;
+            }
+        }
+        .app_part_right {
+            width: 180px;
+            float: left;
+            margin-left: 20px;
+        }
+        .h2_tt {
+            font-size: 20px;
+            color: #c7a774;
+            font-weight: 400;
+            margin: 0;
+            padding: 0;
+        }
+        .intro {
+            color: #707070;
+            line-height: 20px;
+            padding-top: 5px;
+        }
+    }
+}
+.foot_navi {
+    width: 100%;
+    min-width: 990px;
+    margin: 0 auto;
+    .bottom_service_link {
+        &:after{
+            @extend %clearboth;
+        }
+        width: 1190px;
+        margin: 0 auto;
+        dl{
+            width: 130px;
+            margin: 28px 10px 0 4px;
+            float: left;
+            display: inline;
+            dt{
+                padding-bottom: 10px;
+                font-weight: 700;
+                font-size: 16px;
+                color: #5e5e5e;
+            }
+            dd{
+                height: 24px;
+                line-height: 24px;
+                margin: 0;
+                padding: 0;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+            a{
+                color: #999;
+                &:hover{
+                    color: #5E5E5E;
+                    text-decoration: underline;
+                }
+            }
+        }
+        .first_dl{
+            padding-left: 40px;
+        }
+    }
+    .b_bg {
+        height: 220px;
+    }
+    .service_port {
+        width: 285px;
+        float: right;
+        border-left: 1px solid #eee;
+        text-align: center;
+        margin-top: 28px;
+        padding: 15px 0;
+        .tel {
+            font-size: 18px;
+            color: #c7a774;
+            font-weight: 700;
+        }
+        .service_time {
+            color: #999;
+            line-height: 18px;
+            padding-top: 8px;
+        }
+    }
+}
+.gray_box {
+    width: 100%;
+    min-width: 990px;
+    margin: 0 auto;
+    line-height: 24px;
+    color: #5e5e5e;
+    text-align: center;
+    a {
+        color: #5e5e5e;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    .wrap {
+        @extend %wrap;
+        background-color: #fff;
+        padding: 10px 0;
+        p{
+            padding: 0 6px;
+            a{
+                margin: 0 4px;
+            }
+        }
+        .sf_verify {
+            padding: 10px 0 0 10px;
+            clear: both;
+            overflow: hidden;
+            zoom: 1;
+            a,span {
+                margin-right: 7px;
+                display: block;
+                float: left;
+                background: url(http://s.maiyaole.com/images/201306/img/outherLogo.png)no-repeat;
+                overflow: hidden;
+                float: left;
+                zoom: 1;
+                width: 100px;
+                height: 40px;
+                text-indent: -9999px;
+            }
+            @for $i from 0 through 9{
+                .vl_#{$i}{
+                    background-position: -$i*110+px 0;
+                }
+            }
+            
+        }
+    }
+}
+.ta_center {
+    text-align: center;
+    padding: 15px 0 0;
+    a{
+        &:hover{
+            @extend %ahoverred;
+        }
+    }
+}
+.copy_right {
+    color: #5e5e5e;
+    text-align: center;
+    padding: 5px 0 30px;
+    &:after{
+        @extend %clearboth;
+        @extend %wrap;
+    }
+    .copy_ico {
+        margin-left: 5px;
+        &:before{
+            background: url(http://s.maiyaole.com/images/201306/images/copy_ico.png) no-repeat 0 0;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            margin-left: 5px;
+            margin-right: 3px;
+            position: relative;
+            top: 5px;
+            content: "";
+        }
+        &:hover{
+            @extend %ahoverred;
+        }
+    }
+}
+/*----backtop---------*/
+%boxhover{
+    &:hover{
+        background: red;
+        color: #fff;
+        text-indent: 0;
+        text-decoration: none;
+        font-family: "Microsoft YaHei";
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: 400;
+        padding: 0;
+        div{
+            margin-top: 4px;
+        }
+        span{
+            display: block;
+            text-align: center;
+        }
+    }
+}
+.float_box {
+    position: fixed;
+    right: 28px;
+    bottom: 10px;
+    z-index: 100;
+    width: 52px;
+    height: 256px;
+    .f_wei {
+        background-position: 0 -674px;
+        height: 51px;
+        text-indent: 0;
+        line-height: 52px;
+        font-weight: 700;
+        color: #e72519;
+        text-align: center;
+        width: 52px;
+        position: relative;
+        &:hover{
+            background-position: -52px -674px;
+            text-indent: -999px;
+            i{
+                display: none;
+            }
+        }
+        i{
+            position: absolute;
+            color: #fff;
+            right: 11px;
+            top: 8px;
+            height: 12px;
+            width: auto;
+            min-width: 12px;
+            border-radius: 16px;
+            background: red;
+            font-size: 12px;
+            line-height: 12px;
+            padding: 2px;
+            font-style: normal;
+        }
+    }
+    .f_back {
+        background-position: 0 -777px;
+        height: 50px;
+        @extend %boxhover;
+    }
+    .f_top {
+        background-position: 0 -827px;
+        height: 51px;
+        @extend %boxhover;
+    }
+    .showConsult {
+        display: none;
+        left: -362px;
+        top: 0;
+        width: 360px;
+        height: 203px;
+        border: #e72419 1px solid;
+        background-color: #fff;
+        position: absolute;
+        overflow: hidden;
+    }
+    .f_home {
+        background-position: 0 -622px;
+        @extend %boxhover;
+        &:hover{
+            .showConsult{
+                display: block;
+            }
+        }
+    }
+    .consult {
+        position: relative;
+        width: 360px;
+        border: 1px solid #e6e6e6;
+        border-top: 0;
+        clear: both;
+    }
+    .d_txt{
+        margin: 0;
+        border: 0;
+        width: 360px;
+        height: 203px;
+        overflow: hidden;
+        position: absolute;
+        top: -1px;
+        left: -1px;
+        background-color: #fff;
+        font-size: 0;
+        a{
+            &:hover{
+                text-decoration: underline;
+            }
+            padding: 9px 0 9px 25px;
+            width: 64px;
+            font-size: 12px;
+            line-height: 22px;
+            color: #5e5e5e;
+            border-top: 1px solid #e6e6e6;
+            border-left: 1px solid #e6e6e6;
+            border-bottom: 0;
+            display: inline-block;
+            float: left;
+            margin-left: -1px;
+            overflow: hidden;
+            text-align: left;
+            background: url(http://s.maiyaole.com/images/201306/img/yw_talk.gif) no-repeat 6px center;
+        }
+        .b_consultCol{
+            color: #e72419;
+        }
+        .last{
+            width: 65px;
+        }
+        .borderbottom{
+            border-bottom: 1px solid #e6e6e6;
+        }
+        .borderright{
+            border-right: 1px solid #e6e6e6;
+        }
+    }
+}
+.float_box>a{
+    overflow: hidden;
+    display: inline-block;
+    float: left;
+    zoom: 1;
+    width: 52px;
+    height: 52px;
+    text-indent: -9999px;
+    @extend %smallbg;
+      
+}
+/*--------louti----------*/
+.elevator_n {
+    top: 107.5px;
+    display: none;
+    position: fixed;
+    z-index: 99;
+    right: 50%;
+    margin-right: 600px;
+    .xsg{
+        display: block;
+        width: 48px;
+        border: 1px solid #E6E6E6;
+        border-bottom: none;
+        text-align: center;
+        color: #157CDB;
+        padding: 5px 0;
+        text-decoration: none;
+        font-family: "Microsoft YaHei";
+    }
+    ul{
+        overflow: hidden;
+    }
+    li{
+        cursor: pointer;
+        height: 40px;
+        line-height: 40px;
+        overflow: hidden;
+        text-align: center;
+        width: 48px;
+        border: 1px solid #E6E6E6;
+        border-bottom: none;
+        background-color: #fff;
+        a{
+            color: #5e5e5e;
+            display: block;
+            font-family: Arial;
+            font-size: 14px;
+            text-decoration: none;
+        }
+        .etitle{
+            line-height: 17px;
+            padding: 3px 5px;
+            color: #fff;
+            display: none;
+            font-size: 12px;
+            font-family: "Microsoft YaHei";
+        }
+        
+    }
+    .hover{
+        a{
+            display: none;
+        }
+        .etitle{
+            color: #fff;
+            display: block;
+            background: #157CDB;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+/*-------safe_warm-----*/
+
+require(['js/index_jq.js'],function(m1){
+	m1.init();
+	m1.nav();
+	m1.lunbo();
+	m1.goods();
+	m1.smalllunbo('.floor_1');
+	m1.smalllunbo('.floor_2');
+	m1.smalllunbo('.floor_3');
+	m1.smalllunbo('.floor_4');
+	m1.smalllunbo('.floor_5');
+	m1.smalllunbo('.floor_6');
+	m1.smalllunbo('.floor_7');
+	m1.smalllunbo('.floor_8');
+	m1.smalllunbo('.floor_9');
+	m1.smalllunbo('.floor_10');
+	m1.louti();
+	m1.backtotop();
+});

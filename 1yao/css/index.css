@@ -1,0 +1,2021 @@
+@charset "UTF-8";
+/*---------font-------*/
+@font-face {
+  font-family: iconfont;
+  src: url(http://s.maiyaole.com/css/201306/iconfont.eot);
+  src: url(http://s.maiyaole.com/css/201306/iconfont.eot?#iefix) format("embedded-opentype"), url(http://s.maiyaole.com/css/201306/iconfont.woff) format("woff"), url(http://s.maiyaole.com/css/201306/iconfont.ttf) format("truetype"), url(http://s.maiyaole.com/css/201306/iconfont.svg#iconfont) format("svg");
+}
+.iconfont {
+  font-family: iconfont !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: none;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#y_head:after, .head_wrap:after, .y_foot .ft_friendlylink .fri_tit:after, .y_foot .ft_friendlylink .flagship_store:after, .foot_navi .bottom_service_link:after, .copy_right:after, .main_body:after, .main-l .tsSlide ul:after, .index_floor:after, .index_floor .in_floor_l ul:after {
+  height: 0;
+  visibility: hidden;
+  content: ".";
+  display: block;
+  clear: both;
+}
+
+#y_head .site-nav-bd .site-nav-bd-l, #y_head .site-nav-bd .menu, #y_head .site-nav-bd .menu span {
+  display: inline;
+  float: left;
+}
+
+#y_head .site-nav-bd .site-nav-bd-r {
+  display: inline;
+  float: right;
+}
+
+#y_head .site-nav-bd .site-nav-bd-r .menu, #y_head .menu .menu-hd .myyaowang, #y_head .menu .menu-hd .tell em, #y_head .menu .province_box, #y_head #menu_bd_app .dimensional, #y_head #menu_bd_app .yizhen, .head_wrap .sitenav .nav_link i, .head_wrap .app_qrcode a i, .head_wrap .mod_minicart .mini_cart_btn, .head_wrap .mod_minicart .mini_cart_btn span, .head_wrap .mod_minicart .none_tips i, .float_box > a {
+  background: url(http://s.maiyaole.com/images/201306/images/common_sprite.png?t==20141218) no-repeat right 0;
+}
+
+#y_head .menu .menu-hd em, #y_head .menu .menu-hd span {
+  display: inline;
+  float: left;
+  cursor: pointer;
+}
+
+#y_head .menu .menu-hd a:hover, #y_head .hd_provinceList li a:hover {
+  color: #0083ce;
+  text-decoration: underline;
+}
+
+.site_head.yao_head .hotkeys a:hover, .category .mode-bd em a:hover, .ta_center a:hover, .copy_right .copy_ico:hover, .index_floor .in_floor_l li a:hover, .index_floor .sp_show a:hover {
+  color: #e54948;
+  text-decoration: underline;
+}
+
+#y_head .site-nav-bd-r .menu_bd_panel a:hover, .head_wrap .app_qrcode a:hover {
+  background-color: #f3f3f3;
+  color: #5e5e5e;
+  text-decoration: none;
+}
+
+#y_head .site-nav-bd, #topCurtain, .site_head.yao_head, .y_foot .ft_friendlylink, .gray_box .wrap, .copy_right:after, .main_body, .tonglan, .index_floor {
+  margin: 0 auto;
+  width: 1190px;
+}
+
+/*----------safe_warm------------------*/
+.safe_warm {
+  background: #ffffc7;
+  border-bottom: 1px solid #ffd5ab;
+  height: 25px;
+  line-height: 25px;
+  color: #d60107;
+  display: block;
+}
+.safe_warm .safe_warm_con {
+  width: 1200px;
+  margin: 0 auto;
+  height: 25px;
+  text-align: center;
+  position: relative;
+}
+.safe_warm .safe_warm_con a {
+  color: #d60107;
+}
+.safe_warm .safe_warm_con a:hover {
+  text-decoration: underline;
+}
+.safe_warm .safe_warm_con .close_ico {
+  width: 16px;
+  height: 16px;
+  background: url(http://s.maiyaole.com/images/201306/images/close_ico.png) no-repeat -20px 0;
+  display: inline-block;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  top: 5px;
+}
+
+/*----------header------------------*/
+#y_head .site-nav {
+  z-index: 10000;
+  width: 100%;
+  background: #f1f1f1;
+  border-bottom: 1px solid #e9e9e9;
+}
+#y_head .site-nav-bd {
+  height: 36px;
+  -webkit-backface-visibility: hidden;
+}
+#y_head .site-nav-bd .site-nav-bd-l .menu-hd:hover {
+  background-color: #fff;
+  background-position: right -9px;
+}
+#y_head .site-nav-bd .site-nav-bd-l .menu-hd:hover .hd_provinceList {
+  display: block;
+}
+#y_head .site-nav-bd .site-nav-bd-r .menu {
+  background-position: right -178px;
+  padding: 0 10px;
+}
+#y_head .site-nav-bd .site-nav-bd-r .menu_last {
+  background-image: none;
+  padding-right: 0;
+}
+#y_head .site-nav-bd .site-nav-bd-r .menu_last .head_app:hover .tell_title {
+  display: block;
+}
+#y_head .site-nav-bd .site-nav-bd-r .menu_last .head_app:hover #menu_bd_app {
+  display: block;
+}
+#y_head .site-nav-bd .site-nav-bd-r #menu_bd_orther {
+  display: none;
+  width: 95px;
+}
+#y_head .site-nav-bd .site-nav-bd-r .head_order:hover #menu_bd_orther {
+  display: block;
+}
+#y_head .site-nav-bd .site-nav-bd-r .head_order:hover .myyaowang {
+  background-position: right -20px;
+}
+#y_head .site-nav-bd .site-nav-bd-r .menu_bd {
+  position: absolute;
+  margin: 0;
+  left: -11px;
+  top: 3px;
+  background: #fff;
+  z-index: 10001;
+}
+#y_head .site-nav-bd .site-nav-bd-r .menu_bd_panel {
+  padding: 32px 0 0;
+  border: #ddd 1px solid;
+  display: block;
+  float: left;
+}
+#y_head .site-nav-bd .site-nav-bd-r .menu_bd_panel li {
+  float: left;
+}
+#y_head .site-nav-bd .province_name {
+  background-position: right 8px;
+  padding: 0 15px 0 5px;
+  line-height: 20px;
+  height: 25px;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 8px 0 0 5px;
+  text-align: center;
+  color: #707070;
+  font-size: 12px;
+}
+#y_head .site-nav-bd-r .menu_bd_panel a {
+  color: #5e5e5e;
+  line-height: 24px;
+  height: 24px;
+  float: left;
+  padding-left: 11px;
+  width: 82px;
+}
+#y_head .menu .menu-hd {
+  z-index: 10002;
+  position: relative;
+  padding: 0;
+  height: 36px;
+  line-height: 36px;
+}
+#y_head .menu .menu-hd a {
+  z-index: 10002;
+  display: inline;
+  font-size: 12px;
+  color: #5e5e5e;
+}
+#y_head .menu .menu-hd em {
+  position: relative;
+  z-index: 10002;
+}
+#y_head .menu .menu-hd span {
+  position: relative;
+  z-index: 10002;
+}
+#y_head .menu .menu-hd .red {
+  color: #e54948 !important;
+}
+#y_head .menu .menu-hd .mr5 {
+  margin-right: 5px !important;
+}
+#y_head .menu .menu-hd .myyaowang {
+  position: relative;
+  background-position: right 6px;
+  padding: 0 14px 0 0;
+}
+#y_head .menu .menu-hd .tell {
+  position: relative;
+}
+#y_head .menu .menu-hd .tell em {
+  background-position: right -108px;
+  width: 9px;
+  height: 20px;
+  margin-top: 8px;
+  margin-right: 8px;
+  overflow: hidden;
+}
+#y_head .menu .menu-hd .tellnumber {
+  overflow: hidden;
+  float: left;
+  font-size: 12px;
+  color: #c7a774;
+  font-weight: 700;
+  font-family: Tahoma;
+}
+#y_head .menu .menu-hd .tell_title {
+  position: absolute;
+  z-index: 10001;
+  left: -72px;
+  border: 1px solid #ddd;
+  border-bottom: 0;
+  width: 80px;
+  height: 33px;
+  line-height: 33px;
+  overflow: hidden;
+  display: none;
+}
+#y_head .menu .province_box {
+  background-position: right 17px;
+}
+#y_head .menu .province_box span {
+  float: left;
+  padding-left: 5px;
+}
+#y_head .hd_provinceList {
+  display: none;
+  position: absolute;
+  top: 36px;
+  left: -1px;
+  width: 280px;
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  color: #333;
+  cursor: default;
+  z-index: -1;
+  padding: 5px 0;
+  border-top: none;
+}
+#y_head .hd_provinceList li {
+  padding-left: 10px;
+  line-height: 22px;
+  color: #a5a5a5;
+  font-weight: 700;
+  float: none;
+}
+#y_head .hd_provinceList li em {
+  font-style: normal;
+  float: left;
+  width: 10px;
+  display: block;
+  color: #a5a5a5;
+  line-height: 22px;
+}
+#y_head .hd_provinceList li a {
+  margin: 0 4px 0 4px;
+  padding: 1px 2px;
+  float: none;
+  font-weight: 400;
+}
+#y_head #menu_bd_app {
+  cursor: text;
+  background-color: #FFF;
+  border: 1px solid #DDD;
+  display: none;
+  float: left;
+  line-height: 24px;
+  left: -140px;
+  top: 36px;
+  padding: 12px 0;
+  position: absolute;
+  width: 205px;
+}
+#y_head #menu_bd_app p {
+  color: #5E5E5E;
+}
+#y_head #menu_bd_app .dimensional {
+  width: 85px;
+  background-position: -88px -223px;
+  height: 85px;
+  display: block;
+  float: left;
+  margin: 0 auto;
+}
+#y_head #menu_bd_app dl {
+  clear: both;
+}
+#y_head #menu_bd_app dd {
+  float: left;
+}
+#y_head #menu_bd_app .redBold {
+  color: #e72418;
+  font-weight: 700;
+  float: none;
+  cursor: text;
+}
+#y_head #menu_bd_app .yizhen {
+  width: 85px;
+  background-position: -1px -887px;
+  height: 85px;
+  display: block;
+  float: left;
+  margin: 0 auto;
+}
+
+#topCurtain {
+  text-align: center;
+  position: relative;
+}
+#topCurtain #smallSlide {
+  height: 60px;
+  display: block;
+}
+#topCurtain img {
+  vertical-align: top;
+  width: 1190px;
+}
+
+.site_head.yao_head {
+  position: relative;
+  margin-bottom: 10px;
+}
+.site_head.yao_head .mod_logo {
+  margin-right: 105px;
+  width: 180px;
+  float: left;
+  height: 113px;
+  overflow: hidden;
+  zoom: 1;
+  position: relative;
+}
+.site_head.yao_head .mod_logo .logo {
+  padding-top: 26px;
+}
+.site_head.yao_head .mod_logo .logo a {
+  text-decoration: none;
+  display: block;
+  text-indent: -9999px;
+  width: 180px;
+  height: 61px;
+  background: url(http://s.maiyaole.com/images/common/logo_01.png) no-repeat;
+}
+.site_head.yao_head .mod_search {
+  width: 778px;
+  float: left;
+  margin-bottom: 15px;
+}
+.site_head.yao_head .searchForm {
+  float: left;
+  margin: 34px 0 0 0;
+  background-color: #fff;
+  position: relative;
+  z-index: 9999;
+}
+.site_head.yao_head .searchForm .combobox-placeholder {
+  cursor: default;
+  position: absolute;
+  left: 0;
+  top: 3px;
+  line-height: 40px;
+  padding-left: 12px;
+  color: #a5a5a5;
+  width: 393px;
+  height: 30px;
+  overflow: hidden;
+  zoom: 1;
+}
+.site_head.yao_head .searchForm input {
+  width: 435px;
+  outline: 0;
+  float: left;
+  height: 44px;
+  line-height: 44px;
+  padding: 0 5px 0 9px;
+  border: 1px solid #c7a774;
+  color: #666;
+  font-size: 15px;
+  vertical-align: middle;
+  background-color: #fff;
+}
+.site_head.yao_head .searchForm .searchBtn {
+  float: left;
+  width: 82px;
+  height: 46px;
+  line-height: 55px;
+  border: 1px solid #c7a774;
+  cursor: pointer;
+  background-color: #fff;
+  margin-left: -1px;
+}
+.site_head.yao_head .searchForm .search_tips_result_new {
+  display: none;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+  position: absolute;
+  top: 44px;
+  left: 0;
+  width: 449px;
+}
+.site_head.yao_head .hotkeys {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 778px;
+  float: left;
+  height: 16px;
+  margin-top: 10px;
+  zoom: 1;
+}
+.site_head.yao_head .hotkeys .red {
+  color: #e54948;
+}
+.site_head.yao_head .hotkeys a {
+  color: #5e5e5e;
+  padding: 0 6px 0 0;
+  margin-right: 6px;
+  height: 16px;
+  line-height: 16px;
+  font-family: Arial;
+}
+.site_head.yao_head .erDCode {
+  position: absolute;
+  right: 140px;
+  top: 10px;
+  width: 123px;
+  height: 115px;
+}
+.site_head.yao_head .erDCode img {
+  margin-top: 22px;
+  width: 100px;
+}
+
+.head_wrap {
+  margin: 0 auto;
+  text-align: center;
+  border-bottom: 2px solid #d2b994;
+}
+.head_wrap .headerNavMain {
+  z-index: 100;
+  width: 1190px;
+  margin: 0 auto;
+  text-align: left;
+  position: relative;
+  z-index: 10;
+}
+.head_wrap .sortbox {
+  position: absolute;
+  z-index: 99;
+  width: 180px;
+  height: auto;
+  margin-top: 48px;
+  border-bottom: #e6e6e6 1px solid;
+}
+.head_wrap .sortbox ul {
+  width: 180px;
+  height: 400px;
+  background-color: #314349;
+}
+.head_wrap .sitenav {
+  float: left;
+  height: 46px;
+  font-size: 0;
+  background: #fff;
+  vertical-align: middle;
+  padding-left: 180px;
+}
+.head_wrap .sitenav .s_m {
+  word-spacing: -1px;
+  float: left;
+  margin-left: -2px;
+}
+.head_wrap .sitenav .s_m a:hover {
+  color: #0083ce;
+}
+.head_wrap .sitenav .s_m .red {
+  color: #e54948;
+}
+.head_wrap .sitenav .s_m .red:hover {
+  color: #e54948;
+}
+.head_wrap .sitenav .home a {
+  color: #505050;
+  cursor: pointer;
+  padding: 0 15px;
+}
+.head_wrap .sitenav .home a:hover {
+  color: #505050;
+}
+.head_wrap .sitenav .nav_link {
+  font-family: "Microsoft YaHei";
+  font-weight: 400;
+  color: #505050;
+  padding: 0 16px;
+  font-size: 16px;
+  letter-spacing: normal;
+  word-spacing: normal;
+  line-height: 46px;
+  position: relative;
+  display: block;
+  cursor: pointer;
+}
+.head_wrap .sitenav .nav_link i {
+  position: absolute;
+  width: 10px;
+  height: 5px;
+  right: 2px;
+  top: 24px;
+  overflow: hidden;
+  background-position: -161px 0;
+}
+.head_wrap .sitenav .global_buy .nav_link {
+  color: #864efe;
+}
+.head_wrap .sitenav .global_buy .nav_link:hover {
+  color: #864efe;
+}
+.head_wrap .sitenav .global_buy .nav_link .global_ico {
+  background: url(http://s.maiyaole.com/images/201306/images/haitao_ico.gif) no-repeat 0 0;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  float: left;
+  margin-top: 13px;
+  margin-right: 5px;
+}
+.head_wrap .sitenav ul {
+  display: none;
+  font-size: 14px;
+  border: #ddd 1px solid;
+  position: absolute;
+  z-index: 1000;
+  background-color: #fff;
+  font-family: Microsoft YaHei;
+}
+.head_wrap .s_app:hover i {
+  background-position: -161px -25px;
+}
+.head_wrap .s_app:hover ul {
+  display: block;
+  width: 134px;
+}
+.head_wrap .s_app:hover ul a {
+  display: block;
+  line-height: 28px;
+  padding: 0 0 0 20px;
+}
+.head_wrap .app_qrcode a span {
+  position: absolute;
+  left: 134px;
+  border-left: 1px solid #ddd;
+  top: -1px;
+  display: none;
+  padding: 14px 0 0 14px;
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+}
+.head_wrap .app_qrcode a i {
+  display: block;
+  width: 85px;
+  height: 85px;
+  text-indent: -9999px;
+}
+.head_wrap .app_qrcode a:hover {
+  color: #333 !important;
+}
+.head_wrap .app_qrcode a:hover span {
+  display: block;
+}
+.head_wrap .app_qrcode .yyw_qrcode i {
+  background-position: -88px -223px;
+}
+.head_wrap .app_qrcode .yz_qrcode i {
+  background-position: -1px -887px;
+}
+.head_wrap .app_qrcode .wx_qrcode i {
+  background-position: -86px -529px;
+}
+.head_wrap .mod_minicart {
+  width: 140px;
+  font-size: 12px;
+  position: relative;
+  top: -95px;
+  right: -1050px;
+  margin-bottom: -41px;
+  z-index: 99;
+  border: 1px solid #eee;
+}
+.head_wrap .mod_minicart:hover .minicart_list {
+  display: block;
+}
+.head_wrap .mod_minicart .mini_cart_btn {
+  background-position: 10px -312px;
+  display: block;
+  height: 36px;
+  line-height: 36px;
+  vertical-align: middle;
+  color: #5e5e5e;
+}
+.head_wrap .mod_minicart .mini_cart_btn .cart_num {
+  display: block;
+  position: absolute;
+  float: left;
+  top: 3px;
+  width: auto;
+  min-width: 12px;
+  text-align: center;
+  vertical-align: middle;
+  left: 30px;
+  font: 700 12px/10px tahoma;
+  font-style: normal;
+  color: #fff;
+  height: 12px;
+  padding: 2px;
+  background: red;
+  border-radius: 16px;
+}
+.head_wrap .mod_minicart .mini_cart_btn span {
+  position: absolute;
+  width: 50px;
+  left: 55px;
+  background-position: -110px -312px;
+  padding-right: 15px;
+}
+.head_wrap .mod_minicart .minicart_list {
+  display: none;
+  position: absolute;
+  width: 350px;
+  margin-left: -221px;
+  margin-top: -1px;
+  z-index: 10000;
+  border: #e72418 1px solid;
+  border-top: #e72418 2px solid;
+  font: 12px Arial,tahoma,\5b8b\4f53;
+  background: #fff;
+}
+.head_wrap .mod_minicart .minicart_list .checkout_box {
+  float: left;
+  width: 330px;
+  background: #f7f7f7;
+  padding: 10px;
+  text-align: right;
+  border-top: 1px solid #d1d1d1;
+}
+.head_wrap .mod_minicart .list_detail {
+  width: 350px;
+  background: #fff;
+}
+.head_wrap .mod_minicart .list_detail ul {
+  display: none;
+  width: 348px;
+  margin: 0 1px;
+  max-height: 329px;
+  min-height: 142px;
+  position: relative;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.head_wrap .mod_minicart .none_tips {
+  height: 76px;
+  color: #a5a5a5;
+}
+.head_wrap .mod_minicart .none_tips i {
+  float: left;
+  width: 130px;
+  height: 76px;
+  background-position: 42px -370px;
+}
+.head_wrap .mod_minicart .none_tips p {
+  float: left;
+  width: 150px;
+  margin-top: 22px;
+  line-height: 20px;
+}
+.head_wrap .mod_minicart .none_tips a {
+  color: #0083ce;
+  font-weight: 700;
+}
+.head_wrap .mod_minicart .none_tips a:hover {
+  color: #e54948;
+}
+
+/*---浜岀骇瀵艰埅----*/
+.allSort {
+  float: left;
+  width: 180px;
+}
+.allSort .more {
+  background-image: none;
+  position: absolute;
+  z-index: 100;
+  display: block;
+  font: 700 15px/48px tahoma,arial,Microsoft YaHei;
+  color: #fff;
+  width: 166px;
+  padding: 0 0 0 14px;
+  height: 48px;
+  background-color: #19323a;
+  background-position: right -438px;
+}
+.allSort .more:hover {
+  text-decoration: underline;
+}
+.allSort .sortbox {
+  position: absolute;
+  z-index: 99;
+  width: 180px;
+  height: auto;
+  margin-top: 48px;
+  border-bottom: #e6e6e6 1px solid;
+}
+.allSort .sortbox ul {
+  height: 400px;
+  background-color: #314349;
+  width: 180px;
+}
+.allSort .sortbox .stitle i {
+  float: left;
+  font-size: 24px;
+  line-height: 24px;
+  color: #fff;
+  margin-top: 10px;
+  margin-left: 15px;
+  display: block;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  z-index: 103;
+}
+.allSort .sortbox .stitle h4 {
+  margin-left: 47px;
+  font-size: 14px;
+  height: 40px;
+  line-height: 40px;
+  font-weight: 400;
+}
+.allSort .sortbox .stitle:hover {
+  padding-left: 5px;
+  transition: padding-left 0.2s;
+}
+.allSort .sortbox .stitle:hover .category {
+  display: block;
+}
+.allSort .sortbox .stitleactive {
+  padding-left: 5px;
+  transition: padding-left 0.2s;
+}
+.allSort .sortbox .stitleactive a {
+  background-color: #fff !important;
+  color: #000 !important;
+}
+.allSort .sortbox .stitleactive i {
+  color: #000 !important;
+}
+.allSort .sortbox .stitleactive .category {
+  display: block;
+}
+.allSort .sortbox .stitle > a {
+  display: block;
+  width: 180px;
+  height: 40px;
+  color: #fff;
+  background-color: #314349;
+  text-decoration: none;
+}
+.allSort .sortbox .stitle > a:hover {
+  color: #314349;
+  background-color: #fff;
+}
+.allSort .sortbox .stitle > a:hover i {
+  color: #314349;
+}
+
+/*-----------浜岀骇閮ㄥ垎-----------------*/
+.category {
+  display: none;
+  width: 1009px;
+  position: absolute;
+  top: 0;
+  left: 180px;
+  height: 400px;
+  z-index: 101;
+  background: #fff;
+  border-bottom: 1px solid #e8e8e7;
+  border-right: 1px solid #e8e8e7;
+  clear: both;
+}
+.category .mode-bd {
+  font: 12px/18px Arial,tahoma,\5b8b\4f53;
+  vertical-align: middle;
+  width: 252px;
+  height: 399px;
+  overflow: hidden;
+  float: left;
+}
+.category .mode-bd dl {
+  display: block;
+  margin-bottom: 13px;
+}
+.category .mode-bd dl dt {
+  margin: 6px 0 0 23px;
+  padding: 0;
+  line-height: 20px;
+  height: 20px;
+  font-weight: 700;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: auto;
+}
+.category .mode-bd dl dd {
+  display: inline-block;
+  color: #999;
+  line-height: 1.6;
+  margin: 0 0 0 23px;
+  padding: 0 0 6px 0;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.category .mode-bd em {
+  margin: 8px 6px 0 -8px;
+  padding: 1px 6px 0 7px;
+  display: inline-block;
+  font-style: normal;
+  border-left: #ddd 1px solid;
+  font-weight: 400;
+  line-height: 1;
+}
+.category .mode-bd em .red {
+  color: #e54948;
+}
+.category .mode-bd.ads {
+  height: 399px;
+  width: 252px;
+  float: left;
+}
+.category .mode-bd.ads .bodb {
+  border-bottom: 1px solid #e8e8e7;
+}
+.category .mode-bd.ads img {
+  display: block;
+  border-left: 1px solid #e8e8e7;
+  width: 252px;
+}
+
+/*------footer-----------*/
+.y_foot {
+  color: #5E5E5E;
+  margin-top: 20px;
+}
+.y_foot .ft_friendlylink {
+  border: 1px solid #E6E6E6;
+  height: 168px;
+  overflow: hidden;
+  width: 1188px;
+}
+.y_foot .ft_friendlylink .ft_friendlylink {
+  border: 1px solid #E6E6E6;
+  height: 168px;
+  overflow: hidden;
+  width: 1188px;
+}
+.y_foot .ft_friendlylink .fri_tit {
+  background: #F8F8F8;
+  border-bottom: 1px solid #E6E6E6;
+}
+.y_foot .ft_friendlylink .fri_tit li {
+  display: inline;
+  float: left;
+  width: 178px;
+  height: 33px;
+  border-right: 1px solid #E6E6E6;
+  font-size: 12px;
+  line-height: 33px;
+  text-align: center;
+  cursor: pointer;
+}
+.y_foot .ft_friendlylink .fri_tit .cur {
+  background: #fff;
+  font-weight: 700;
+  height: 34px;
+  margin-bottom: -1px;
+}
+.y_foot .ft_friendlylink .fri_ct {
+  padding: 10px 0;
+}
+.y_foot .ft_friendlylink .flagship_store {
+  padding: 8px 0 15px 8px;
+}
+.y_foot .ft_friendlylink .flagship_store a {
+  float: left;
+  display: block;
+  background: url(http://s.maiyaole.com/images/201306/images/img_btm_logo.png) no-repeat;
+  width: 110px;
+  height: 46px;
+  text-indent: -9999px;
+  margin: 7px 8px 0 0;
+  opacity: .7;
+}
+.y_foot .ft_friendlylink .friendly {
+  display: none;
+  padding-top: 20px;
+  margin-left: 30px;
+}
+.y_foot .ft_friendlylink .friendly a {
+  display: block;
+  width: 128px;
+  height: 26px;
+  float: left;
+  color: #666;
+  margin: 0;
+}
+.y_foot .ft_friendlylink .friendly a:hover {
+  text-decoration: underline;
+}
+
+.ft_commit {
+  height: 180px;
+  margin-top: 80px;
+  text-align: center;
+  margin-bottom: 50px;
+  background-color: #f0f0f0;
+  overflow: hidden;
+  zoom: 1;
+  clear: both;
+}
+.ft_commit .ft_commit_div {
+  height: 168px;
+  margin: 0 auto;
+  overflow: hidden;
+  width: 1300px;
+}
+.ft_commit .ft_commit_div a {
+  width: 250px;
+  float: left;
+  margin: -14px 0 0 38px;
+}
+.ft_commit .ft_commit_div a i {
+  width: 275px;
+  height: 115px;
+  display: block;
+  margin: 50px 0 20px 40px;
+  background: url(http://s.maiyaole.com/images/201306/images/icon_gonggaob.png) no-repeat left top;
+}
+.ft_commit .ft_commit_div a .ic-yingsibz {
+  background-position: 11px 0;
+}
+.ft_commit .ft_commit_div a .ic-pinpai {
+  background-position: -298px 0;
+}
+.ft_commit .ft_commit_div a .ic-yaojian {
+  background-position: -620px 0;
+}
+.ft_commit .ft_commit_div a .ic-yaojian {
+  background-position: -620px 0;
+}
+.ft_commit .ft_commit_div .c_4 i {
+  margin-left: 80px;
+}
+
+.app_part {
+  width: 100%;
+}
+.app_part .app_part_con {
+  width: 1190px;
+  margin: auto;
+  overflow: hidden;
+}
+.app_part .app_part_ul .no_margin {
+  margin: 0;
+}
+.app_part .app_part_ul li {
+  width: 343px;
+  height: 108px;
+  background: #f0f0f0;
+  padding: 20px 0 20px 40px;
+  float: left;
+  margin-left: 20px;
+}
+.app_part .app_part_ul li img {
+  width: 110px;
+  height: 110px;
+  float: left;
+}
+.app_part .app_part_ul .app_part_right {
+  width: 180px;
+  float: left;
+  margin-left: 20px;
+}
+.app_part .app_part_ul .h2_tt {
+  font-size: 20px;
+  color: #c7a774;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+}
+.app_part .app_part_ul .intro {
+  color: #707070;
+  line-height: 20px;
+  padding-top: 5px;
+}
+
+.foot_navi {
+  width: 100%;
+  min-width: 990px;
+  margin: 0 auto;
+}
+.foot_navi .bottom_service_link {
+  width: 1190px;
+  margin: 0 auto;
+}
+.foot_navi .bottom_service_link dl {
+  width: 130px;
+  margin: 28px 10px 0 4px;
+  float: left;
+  display: inline;
+}
+.foot_navi .bottom_service_link dl dt {
+  padding-bottom: 10px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #5e5e5e;
+}
+.foot_navi .bottom_service_link dl dd {
+  height: 24px;
+  line-height: 24px;
+  margin: 0;
+  padding: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.foot_navi .bottom_service_link dl a {
+  color: #999;
+}
+.foot_navi .bottom_service_link dl a:hover {
+  color: #5E5E5E;
+  text-decoration: underline;
+}
+.foot_navi .bottom_service_link .first_dl {
+  padding-left: 40px;
+}
+.foot_navi .b_bg {
+  height: 220px;
+}
+.foot_navi .service_port {
+  width: 285px;
+  float: right;
+  border-left: 1px solid #eee;
+  text-align: center;
+  margin-top: 28px;
+  padding: 15px 0;
+}
+.foot_navi .service_port .tel {
+  font-size: 18px;
+  color: #c7a774;
+  font-weight: 700;
+}
+.foot_navi .service_port .service_time {
+  color: #999;
+  line-height: 18px;
+  padding-top: 8px;
+}
+
+.gray_box {
+  width: 100%;
+  min-width: 990px;
+  margin: 0 auto;
+  line-height: 24px;
+  color: #5e5e5e;
+  text-align: center;
+}
+.gray_box a {
+  color: #5e5e5e;
+}
+.gray_box a:hover {
+  text-decoration: underline;
+}
+.gray_box .wrap {
+  background-color: #fff;
+  padding: 10px 0;
+}
+.gray_box .wrap p {
+  padding: 0 6px;
+}
+.gray_box .wrap p a {
+  margin: 0 4px;
+}
+.gray_box .wrap .sf_verify {
+  padding: 10px 0 0 10px;
+  clear: both;
+  overflow: hidden;
+  zoom: 1;
+}
+.gray_box .wrap .sf_verify a, .gray_box .wrap .sf_verify span {
+  margin-right: 7px;
+  display: block;
+  float: left;
+  background: url(http://s.maiyaole.com/images/201306/img/outherLogo.png) no-repeat;
+  overflow: hidden;
+  float: left;
+  zoom: 1;
+  width: 100px;
+  height: 40px;
+  text-indent: -9999px;
+}
+.gray_box .wrap .sf_verify .vl_0 {
+  background-position: 0px 0;
+}
+.gray_box .wrap .sf_verify .vl_1 {
+  background-position: -110px 0;
+}
+.gray_box .wrap .sf_verify .vl_2 {
+  background-position: -220px 0;
+}
+.gray_box .wrap .sf_verify .vl_3 {
+  background-position: -330px 0;
+}
+.gray_box .wrap .sf_verify .vl_4 {
+  background-position: -440px 0;
+}
+.gray_box .wrap .sf_verify .vl_5 {
+  background-position: -550px 0;
+}
+.gray_box .wrap .sf_verify .vl_6 {
+  background-position: -660px 0;
+}
+.gray_box .wrap .sf_verify .vl_7 {
+  background-position: -770px 0;
+}
+.gray_box .wrap .sf_verify .vl_8 {
+  background-position: -880px 0;
+}
+.gray_box .wrap .sf_verify .vl_9 {
+  background-position: -990px 0;
+}
+
+.ta_center {
+  text-align: center;
+  padding: 15px 0 0;
+}
+
+.copy_right {
+  color: #5e5e5e;
+  text-align: center;
+  padding: 5px 0 30px;
+}
+.copy_right .copy_ico {
+  margin-left: 5px;
+}
+.copy_right .copy_ico:before {
+  background: url(http://s.maiyaole.com/images/201306/images/copy_ico.png) no-repeat 0 0;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-left: 5px;
+  margin-right: 3px;
+  position: relative;
+  top: 5px;
+  content: "";
+}
+
+/*----backtop---------*/
+.float_box .f_back:hover, .float_box .f_top:hover, .float_box .f_home:hover {
+  background: red;
+  color: #fff;
+  text-indent: 0;
+  text-decoration: none;
+  font-family: "Microsoft YaHei";
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  padding: 0;
+}
+.float_box .f_back:hover div, .float_box .f_top:hover div, .float_box .f_home:hover div {
+  margin-top: 4px;
+}
+.float_box .f_back:hover span, .float_box .f_top:hover span, .float_box .f_home:hover span {
+  display: block;
+  text-align: center;
+}
+
+.float_box {
+  position: fixed;
+  right: 28px;
+  bottom: 10px;
+  z-index: 100;
+  width: 52px;
+  height: 256px;
+}
+.float_box .f_wei {
+  background-position: 0 -674px;
+  height: 51px;
+  text-indent: 0;
+  line-height: 52px;
+  font-weight: 700;
+  color: #e72519;
+  text-align: center;
+  width: 52px;
+  position: relative;
+}
+.float_box .f_wei:hover {
+  background-position: -52px -674px;
+  text-indent: -999px;
+}
+.float_box .f_wei:hover i {
+  display: none;
+}
+.float_box .f_wei i {
+  position: absolute;
+  color: #fff;
+  right: 11px;
+  top: 8px;
+  height: 12px;
+  width: auto;
+  min-width: 12px;
+  border-radius: 16px;
+  background: red;
+  font-size: 12px;
+  line-height: 12px;
+  padding: 2px;
+  font-style: normal;
+}
+.float_box .f_back {
+  background-position: 0 -777px;
+  height: 50px;
+}
+.float_box .f_top {
+  background-position: 0 -827px;
+  height: 51px;
+}
+.float_box .showConsult {
+  display: none;
+  left: -362px;
+  top: 0;
+  width: 360px;
+  height: 203px;
+  border: #e72419 1px solid;
+  background-color: #fff;
+  position: absolute;
+  overflow: hidden;
+}
+.float_box .f_home {
+  background-position: 0 -622px;
+}
+.float_box .f_home:hover .showConsult {
+  display: block;
+}
+.float_box .consult {
+  position: relative;
+  width: 360px;
+  border: 1px solid #e6e6e6;
+  border-top: 0;
+  clear: both;
+}
+.float_box .d_txt {
+  margin: 0;
+  border: 0;
+  width: 360px;
+  height: 203px;
+  overflow: hidden;
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  background-color: #fff;
+  font-size: 0;
+}
+.float_box .d_txt a {
+  padding: 9px 0 9px 25px;
+  width: 64px;
+  font-size: 12px;
+  line-height: 22px;
+  color: #5e5e5e;
+  border-top: 1px solid #e6e6e6;
+  border-left: 1px solid #e6e6e6;
+  border-bottom: 0;
+  display: inline-block;
+  float: left;
+  margin-left: -1px;
+  overflow: hidden;
+  text-align: left;
+  background: url(http://s.maiyaole.com/images/201306/img/yw_talk.gif) no-repeat 6px center;
+}
+.float_box .d_txt a:hover {
+  text-decoration: underline;
+}
+.float_box .d_txt .b_consultCol {
+  color: #e72419;
+}
+.float_box .d_txt .last {
+  width: 65px;
+}
+.float_box .d_txt .borderbottom {
+  border-bottom: 1px solid #e6e6e6;
+}
+.float_box .d_txt .borderright {
+  border-right: 1px solid #e6e6e6;
+}
+
+.float_box > a {
+  overflow: hidden;
+  display: inline-block;
+  float: left;
+  zoom: 1;
+  width: 52px;
+  height: 52px;
+  text-indent: -9999px;
+}
+
+/*--------louti----------*/
+.elevator_n {
+  top: 107.5px;
+  display: none;
+  position: fixed;
+  z-index: 99;
+  right: 50%;
+  margin-right: 600px;
+}
+.elevator_n .xsg {
+  display: block;
+  width: 48px;
+  border: 1px solid #E6E6E6;
+  border-bottom: none;
+  text-align: center;
+  color: #157CDB;
+  padding: 5px 0;
+  text-decoration: none;
+  font-family: "Microsoft YaHei";
+}
+.elevator_n ul {
+  overflow: hidden;
+}
+.elevator_n li {
+  cursor: pointer;
+  height: 40px;
+  line-height: 40px;
+  overflow: hidden;
+  text-align: center;
+  width: 48px;
+  border: 1px solid #E6E6E6;
+  border-bottom: none;
+  background-color: #fff;
+}
+.elevator_n li a {
+  color: #5e5e5e;
+  display: block;
+  font-family: Arial;
+  font-size: 14px;
+  text-decoration: none;
+}
+.elevator_n li .etitle {
+  line-height: 17px;
+  padding: 3px 5px;
+  color: #fff;
+  display: none;
+  font-size: 12px;
+  font-family: "Microsoft YaHei";
+}
+.elevator_n .hover a {
+  display: none;
+}
+.elevator_n .hover .etitle {
+  color: #fff;
+  display: block;
+  background: #157CDB;
+}
+
+.consult_div .consult_text a i {
+  background: url(http://s.maiyaole.com/images/201306/images/just_index.png) no-repeat;
+  display: inline-block;
+}
+
+body {
+  background: url(http://s.maiyaole.com/images/201306/images/body_bg.png) repeat fixed 0 0 transparent;
+}
+
+/*---------banner--------------*/
+.main_body {
+  position: relative;
+}
+
+.main-l {
+  width: 750px;
+  float: left;
+  display: inline;
+  margin-left: 180px;
+}
+.main-l .tsSlide {
+  position: relative;
+  overflow: hidden;
+}
+.main-l .tsSlide .y_slide_next, .main-l .tsSlide .y_slide_prev {
+  z-index: 10002;
+  position: absolute;
+  top: 175px;
+  width: 30px;
+  height: 50px;
+  overflow: hidden;
+  outline: 0;
+  cursor: pointer;
+  opacity: .3;
+  background-image: url(http://s.maiyaole.com/images/201306/images/just_index.png);
+  background-repeat: no-repeat;
+}
+.main-l .tsSlide .y_slide_prev {
+  left: 10px;
+  background-position: 0 -326px;
+}
+.main-l .tsSlide .y_slide_next {
+  right: 12px;
+  background-position: 0 -397px;
+}
+.main-l .tsSlide .imgbox a {
+  display: block;
+  position: absolute;
+  width: 750px;
+  height: 400px;
+  left: 750px;
+}
+.main-l .tsSlide .imgbox .first {
+  left: 0px;
+}
+.main-l .tsSlide, .main-l .y_slide_img {
+  width: 750px;
+  height: 400px;
+}
+.main-l .y_slide_img {
+  position: absolute;
+}
+.main-l .tsSlideSwitch {
+  position: absolute;
+  bottom: 5px;
+  z-index: 10;
+  width: 100%;
+  text-align: center;
+}
+.main-l .y_slide_a, .main-l .y_slide_on {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-left: 10px;
+  background-color: #3e535a;
+  opacity: .5;
+  line-height: 15px;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.main-l .y_slide_on {
+  opacity: 1;
+}
+
+.main-r {
+  width: 259px;
+  height: 398px;
+  height: 399px;
+  border-right: 1px solid #d2b994;
+  overflow: hidden;
+  border-bottom: 1px solid #d2b994;
+}
+.main-r .doctor_box {
+  position: relative;
+  width: 260px;
+}
+.main-r .doctor_box .consult_tabMenu {
+  text-align: center;
+  line-height: 32px;
+}
+.main-r .doctor_box .consult_tabMenu .consult_tt {
+  display: inline-block;
+  margin: 0 10px;
+  line-height: 22px;
+  color: #5e5e5e;
+  cursor: pointer;
+}
+.main-r .doctor_box .consult_tabMenu .tabMenu_cur {
+  border-bottom: 1px solid #C7A774;
+  color: #C7A774;
+}
+
+.consult_div .hide {
+  display: none;
+}
+.consult_div .underline a:hover {
+  text-decoration: underline;
+}
+.consult_div .consult_text {
+  padding-left: 23px;
+  padding-bottom: 8px;
+  overflow: hidden;
+  font-size: 13px;
+}
+.consult_div .consult_text a {
+  width: 72px;
+  display: inline-block;
+  float: left;
+  height: 25px;
+  line-height: 25px;
+  color: #707070;
+}
+.consult_div .consult_text a i {
+  background-position: -15px -452px;
+  width: 6px;
+  height: 10px;
+  margin-left: 5px;
+  position: relative;
+  top: 1px;
+}
+.consult_div .consult_text .consult_text_dep {
+  display: inline-block;
+  width: 72px;
+  height: auto;
+  margin: 15px 10px 4px 20px;
+}
+.consult_div .consult_text .consult_text_dep .consult_img {
+  width: 72px;
+  height: 72px;
+  display: inline-block;
+}
+.consult_div .consult_text .consult_text_dep p {
+  font-size: 14px;
+  color: #666;
+  line-height: 26px;
+  text-align: center;
+}
+.consult_div .consult_text .consult_text_dep_4 .consult_img {
+  background: url(//s.maiyaole.com/images/201612/icon_4.png) no-repeat;
+}
+.consult_div .consult_text .consult_text_dep_3 .consult_img {
+  background: url(//s.maiyaole.com/images/201612/icon_3.png) no-repeat;
+}
+.consult_div .consult_text_dep:hover img {
+  display: block;
+}
+.consult_div .consult_text_dep:hover span {
+  display: none !important;
+}
+.consult_div .consult_tt {
+  line-height: 32px;
+  text-align: center;
+  color: #c7a774;
+  padding-top: 5px;
+  font-size: 16px;
+}
+
+.server_banner {
+  text-align: center;
+  overflow: hidden;
+  margin: 0 13px;
+}
+.server_banner img {
+  width: 100%;
+  height: 80px;
+}
+
+.server_announce {
+  height: 174px;
+}
+.server_announce .hide {
+  display: none;
+}
+.server_announce .server_tt {
+  text-align: center;
+  height: 30px;
+  padding-top: 10px;
+}
+.server_announce .server_tt .server_tab {
+  display: inline-block;
+  font-size: 16px;
+}
+.server_announce .server_tt .server_tab .on {
+  color: #c7a774;
+  border-bottom: 1px solid #c7a774;
+}
+.server_announce .server_tt .server_tab li {
+  display: inline-block;
+  float: left;
+  margin: 0 10px;
+  padding-bottom: 2px;
+  cursor: pointer;
+}
+.server_announce .service_div {
+  overflow: hidden;
+  padding: 0 0 0 10px;
+  height: 71px;
+  padding-top: 20px;
+}
+.server_announce .service_div a {
+  width: 60px;
+  float: left;
+  display: block;
+  text-align: center;
+}
+.server_announce .service_div a i {
+  margin-bottom: 5px;
+}
+.server_announce .service_div a span {
+  display: block;
+  color: #c7a774;
+}
+.server_announce .service_div a .service_ico {
+  background: url(http://s.maiyaole.com/images/201306/images/icon_gonggao.png) no-repeat;
+  display: inline-block;
+  width: 37px;
+  height: 37px;
+}
+.server_announce .service_div a .service_zheng {
+  background-position: -42px -44px;
+}
+.server_announce .service_div a .service_shou {
+  background-position: -100px -44px;
+}
+.server_announce .service_div a .service_jian {
+  background-position: -156px -44px;
+}
+.server_announce .service_div a .service_mian {
+  background-position: -214px -44px;
+}
+.server_announce .news_ul {
+  text-align: left;
+  padding-left: 18px;
+  overflow: hidden;
+  padding-bottom: 10px;
+  font-size: 13px;
+}
+.server_announce .news_ul li {
+  line-height: 25px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: auto;
+  zoom: 1;
+}
+.server_announce .news_ul li .mark {
+  color: #333;
+}
+.server_announce .news_ul a {
+  color: #707070;
+}
+.server_announce .news_ul a:hover {
+  color: #e54948;
+}
+.server_announce .news_ul a:hover .mark {
+  color: #e54948;
+}
+
+/*----------------*/
+.specialAds {
+  width: 100%;
+  height: auto;
+  margin: 10px auto;
+  overflow: hidden;
+}
+.specialAds a {
+  margin-right: 3px;
+}
+.specialAds a img {
+  width: 247px;
+  height: 150px;
+}
+.specialAds .lastAds {
+  margin-right: 0 !important;
+}
+.specialAds .limited_time {
+  width: 180px;
+  height: 150px;
+  float: left;
+  margin-right: 0;
+}
+.specialAds .limited_time .clock-wrap {
+  position: relative;
+  width: 180px;
+  height: 150px;
+  background: url(http://s.maiyaole.com/images/201306/img/clock01.png) no-repeat;
+}
+.specialAds .limited_time .clock {
+  position: absolute;
+  left: 63px;
+  top: 32px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 6px solid transparent;
+}
+.specialAds .limited_time .clock:before {
+  content: "";
+  position: absolute;
+  left: 18px;
+  top: 18px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #fff;
+}
+.specialAds .limited_time .clock .clock-h {
+  position: absolute;
+  top: 5px;
+  left: 19px;
+  height: 18px;
+  width: 5px;
+  background: url(http://s.maiyaole.com/images/201306/img/clock_h.png) no-repeat;
+  transform: rotate(10deg);
+  -webkit-transform-origin: 2.5px 12.5px;
+  -moz-transform-origin: 2.5px 12.5px;
+  transform-origin: 2.5px 12.5px;
+}
+.specialAds .limited_time .clock .clock-m {
+  position: absolute;
+  left: 5px;
+  top: 19px;
+  width: 19px;
+  height: 5px;
+}
+.specialAds .limited_time .clock .clock-m:after {
+  content: "";
+  position: absolute;
+  left: 14px;
+  top: -17px;
+  width: 4px;
+  height: 21px;
+  background-color: #967783;
+  border-radius: 2px;
+  background: url(http://s.maiyaole.com/images/201306/img/clock_m.png) no-repeat;
+  border: 1px solid transparent;
+  transform: rotate("");
+  -webkit-transform-origin: 2.5px 19.5px;
+  -moz-transform-origin: 2.5px 19.5px;
+  transform-origin: 2.5px 19.5px;
+  -webkit-animation: tick-tock 20s steps(60, end) infinite;
+  -moz-animation: tick-tock 20s steps(60, end) infinite;
+  animation: tick-tock 20s steps(60, end) infinite;
+}
+.specialAds .limited_time .clock .clock-s {
+  position: absolute;
+  left: 17px;
+  top: -6px;
+  width: 5px;
+  height: 26px;
+  -webkit-transform-origin: bottom;
+  -webkit-animation: tick-tock 10s linear infinite;
+  -moz-transform-origin: bottom;
+  -moz-animation: tick-tock 10s linear infinite;
+  transform-origin: bottom;
+  animation: tick-tock 10s linear infinite;
+}
+.specialAds .limited_time .clock .clock-s:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 5px;
+  height: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.tonglan {
+  margin-top: 10px;
+}
+.tonglan img {
+  width: 100%;
+  height: 90px;
+}
+
+.index_floor {
+  margin-top: 30px;
+  border: 1px solid #F3F3F3;
+  font-family: "Microsoft Yahei";
+  color: #5e5e5e;
+  width: 1189px;
+  height: 485px;
+  border-top: none;
+  border-bottom: none;
+}
+.index_floor .in_floor_l {
+  float: left;
+  width: 180px;
+}
+.index_floor .in_floor_l .floor_name {
+  padding-left: 20px;
+  height: 85px;
+  line-height: 85px;
+  background: #F8F8F8;
+  font-size: 20px;
+}
+.index_floor .in_floor_l .floor_name_1.cur {
+  color: #fff;
+  background: #92c4ff;
+}
+.index_floor .in_floor_l li {
+  float: left;
+  width: 89px;
+  height: 49px;
+  border: 1px solid #F3F3F3;
+  border-left: none;
+  border-top: none;
+  text-align: center;
+  line-height: 49px;
+  font-size: 14px;
+}
+.index_floor .in_floor_l li a {
+  color: #5e5e5e;
+}
+.index_floor .in_floor_r {
+  float: right;
+  width: 1009px;
+}
+.index_floor .in_floor_r .sale {
+  height: 284px;
+}
+.index_floor .in_floor_r .sale_ads {
+  height: 100%;
+  float: left;
+}
+.index_floor .in_floor_r .sale_ads img {
+  width: 201px;
+  height: 100%;
+  float: left;
+  border-right: 1px solid #F3F3F3;
+}
+.index_floor .in_floor_r .sale_ads .last {
+  border-right: 0;
+}
+.index_floor .in_floor_r .sale_slider {
+  width: 605px;
+  height: 100%;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  border-right: 1px solid #f3f3f3;
+}
+.index_floor .in_floor_r .sale_slider a {
+  width: 605px;
+  height: 100%;
+  display: block;
+  position: absolute;
+}
+.index_floor .in_floor_r .sale_slider .img {
+  left: 605px;
+}
+.index_floor .in_floor_r .sale_slider .first {
+  left: 0;
+}
+.index_floor .in_floor_r .sale_slider img {
+  left: 0px;
+  z-index: 9;
+  width: 605px;
+  height: 100%;
+  position: absolute;
+}
+.index_floor .in_floor_r .tsSlideSwitch {
+  height: 16px;
+}
+.index_floor .in_floor_r .tsSlideSwitch a {
+  position: static;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+}
+.index_floor .sale_ads a:hover img {
+  opacity: 0.8;
+}
+.index_floor .tsSlideSwitch {
+  position: absolute;
+  bottom: 5px;
+  z-index: 10;
+  width: 100%;
+  text-align: center;
+}
+.index_floor .y_slide_a, .index_floor .y_slide_on {
+  width: 12px;
+  height: 12px;
+  line-height: 12px;
+  margin-left: 10px;
+  background-color: #3e535a;
+  opacity: .5;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+  display: inline-block;
+}
+.index_floor .y_slide_on {
+  opacity: 1;
+}
+.index_floor .sp_show {
+  height: 201px;
+}
+.index_floor .sp_show li {
+  float: left;
+  width: 161px;
+  padding: 20px 20px 10px 20px;
+  border-right: 1px solid #F3F3F3;
+  border-bottom: 1px solid #F3F3F3;
+  height: 170px;
+}
+.index_floor .sp_show li .tit {
+  font-size: 14px;
+  height: 20px;
+  overflow: hidden;
+  text-align: center;
+  margin: 15px 0 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.index_floor .sp_show li p {
+  color: #E72418;
+  font-size: 16px;
+  text-align: center;
+}
+.index_floor .sp_show li i {
+  font-size: 12px;
+  padding-right: 5px;
+}
+.index_floor .sp_show .last {
+  border-right: 0;
+}
+.index_floor .sp_show a {
+  display: block;
+}
+.index_floor .sp_show a:hover img {
+  opacity: .8;
+}
+.index_floor .sp_show img {
+  width: 100px;
+  height: 100px;
+  margin-left: 30px;
+}
+
+.floor_1 {
+  border-top: 2px solid #92c4ff;
+}
+.floor_1 .floor_name {
+  background-color: #92c4ff !important;
+}
+
+.floor_2 {
+  border-top: 2px solid #ffa27a;
+}
+.floor_2 .floor_name {
+  background-color: #ffa27a !important;
+}
+
+.floor_3 {
+  border-top: 2px solid #ff6b6b;
+}
+.floor_3 .floor_name {
+  background-color: #ff6b6b !important;
+}
+
+.floor_4 {
+  border-top: 2px solid #f6c89e;
+}
+.floor_4 .floor_name {
+  background-color: #f6c89e !important;
+}
+
+.floor_5 {
+  border-top: 2px solid #aee177;
+}
+.floor_5 .floor_name {
+  background-color: #aee177 !important;
+}
+
+.floor_6 {
+  border-top: 2px solid #ffacd0;
+}
+.floor_6 .floor_name {
+  background-color: #ffacd0 !important;
+}
+
+.floor_7 {
+  border-top: 2px solid #cac3f2;
+}
+.floor_7 .floor_name {
+  background-color: #cac3f2 !important;
+}
+
+.floor_8 {
+  border-top: 2px solid #fcb0c0;
+}
+.floor_8 .floor_name {
+  background-color: #fcb0c0 !important;
+}
+
+.floor_9 {
+  border-top: 2px solid #cac3f2;
+}
+.floor_9 .floor_name {
+  background-color: #cac3f2 !important;
+}
+
+.floor_10 {
+  border-top: 2px solid #16f0cf;
+}
+.floor_10 .floor_name {
+  background-color: #16f0cf !important;
+}
+
+/*# sourceMappingURL=index.css.map */

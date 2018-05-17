@@ -1,0 +1,417 @@
+/*-------login---------*/
+%wrap{
+    margin: 0 auto;
+    width: 990px;
+}
+%clearboth{
+    &:after{
+        height: 0;
+        visibility: hidden;
+        content: ".";
+        display: block;
+        clear: both;
+    }
+};
+%clearfix{
+    display: table;
+    content: "";
+    height: 0;
+    line-height: 0;
+    clear: both;
+}
+body{
+    font: 12px "Lucida Grande", tahoma, arial, \5b8b\4f53;
+    color: #5E5E5E;
+}
+.head{
+    height: 98px;
+    overflow: hidden;
+    @extend %wrap;
+    .logo {
+        float: left;
+        margin-left: 10px;
+    }
+}
+.login_wrap {
+    @extend %wrap;
+    position: relative;
+    background: #fff url(http://s.maiyaole.com/images/passport/l_bg_02.png) no-repeat left top;
+    width: 988px;
+    min-height: 335px;
+    color: #5e5e5e;
+    border: #e6e6e6 1px solid;
+    border-top: #0083ce 2px solid;
+    box-shadow: -1px 1px 10px #EFEFEF, -1px 10px 10px #EFEFEF;
+    padding-top: 8px;
+    .tab_box {
+        height: 25px;
+        margin-left: 560px;
+        padding: 10px 0;
+        padding-top: 2px;
+        border-bottom: 1px solid #e2e2e2;
+        .item {
+            float: left;
+            position: relative;
+            width: 50%;
+            text-align: center;
+            font-size: 14px;
+            line-height: 25px;
+            &:before{
+                display: block;
+                position: absolute;
+                content: "";
+                width: 1px;
+                height: 100%;
+                top: 0;
+                right: 0;
+                background-color: #e2e2e2;
+            }
+            a{
+                display: block;
+                position: relative;
+                margin: 0 30px;
+            }
+        }
+        .cur{
+            a{
+                color: #2C9EE1;
+                &:before{
+                    display: block;
+                    position: absolute;
+                    content: "";
+                    width: 100%;
+                    height: 2px;
+                    left: 0;
+                    bottom: -10px;
+                    background-color: #2C9EE0;
+                }
+            }
+        }
+    }
+    .tab_con {
+        margin-left: 560px;
+        padding: 0 30px;
+        .lg_title {
+            
+            padding: 0;
+            margin: 13px 0;
+            font: 16px "microsoft yahei";
+            span{
+                float: right;
+                font-size: 12px;
+                margin-top: 7px;
+                font-family: \5b8b\4f53;
+            }
+            .blue_link{
+                color: #0083ce;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+            .btn{
+                width: 326px;
+                font: 18px "microsoft yahei";
+            }
+        }
+        .form_group{
+            position: relative;
+            .lbs{
+                display: block;
+                position: relative;
+            }
+            &:after{
+                @extend %clearfix;
+            }
+            
+        }
+        .lbs{
+            .error{
+                display: block;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                padding-left: 25px;
+                font-size: 12px;
+                line-height: 35px;
+                color: #F12424;
+                background: url(http://s.maiyaole.com/images/baogang/logo_error.png) 0 center no-repeat;
+                white-space: nowrap;
+                overflow: hidden;
+                width: 340px;
+            }
+            .i_empty {
+                background-position: right -57px;
+            }
+            .check_btn {
+                cursor: pointer;
+                display: block;
+                width: 120px;
+                height: 40px;
+                padding: 0;
+                border: 1px solid #C6E1F0;
+                font-size: 14px;
+                line-height: 40px;
+                text-align: center;
+                color: #5CBAF0;
+                background-color: #F1FAFF;
+            }
+        }
+        .pb35 {
+            padding-bottom: 35px;
+        }
+        .fl {
+            float: left;
+        }
+        .mr10 {
+            margin-right: 10px;
+        }
+        .txt.phone{
+            width: 270px;
+            padding-left: 42px;
+            background: url(http://s.maiyaole.com/images/baogang/logo_phone.png) 18px center no-repeat;
+        } 
+        .txt.check_num {
+            width: 140px;
+            padding-left: 42px;
+            background: url(http://s.maiyaole.com/images/baogang/logo_key.png) 18px center no-repeat;
+        }
+        .txt{
+            display: block;
+            width: 300px;
+            padding: 10px;
+            border: 1px solid #e6e6e6;
+            font-size: 14px;
+            line-height: 20px;
+        }       
+    }
+    #quickLogin{
+        display: none;
+    }
+}
+.bg_link {
+    outline-style: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    text-indent: -9999px;
+    display: block;
+    width: 560px;
+    height: 363px;
+}
+.reg_row {
+    min-height: 70px;
+    width: 340px;
+    position: relative;
+    
+    .form-control {
+        display: block;
+        width: 286px;
+        height: 26px;
+        padding: 6px 12px 6px 40px;
+        font-size: 14px;
+        line-height: 1.428571429;
+        vertical-align: middle;
+        background-color: transparent;
+        border: 1px solid #e6e6e6;
+        -webkit-appearance: none;
+    }
+    .u_name {
+        background-position: 8px -114px;
+    }
+    .i_empty {
+        display: none;
+        background-position: right -57px;
+    }
+    span.error {
+        color: #e72418;
+    }
+    .u_ps {
+        background-position: 8px -145px;
+    }
+    .fr {
+        float: right;
+    }
+    .u_verify {
+        width: 150px;
+        margin-right: 10px;
+        padding-left: 10px;
+        float: left;
+    }
+    .verifyimg {
+        margin-left: 10px;
+        float: left;
+        width: 100px;
+        height: 40px;
+        font-size: 30px;
+        color: red;
+        cursor: pointer;
+    }
+    .verifylink {
+        float: left;
+        margin-left: 10px;
+        line-height: 40px;
+        color: #0083ce;
+        &:hover{
+            text-decoration: underline;
+        }
+    }
+    
+}
+.verify_box {
+    height: 60px;
+    min-height: 60px;
+    .i_true,.i_false{
+        float: left;
+        margin-left: -34px;
+        margin-top: 12px;
+        background: url(http://s.maiyaole.com/images/passport/regest.png) no-repeat 0 0;
+        
+    }
+    .i_true{
+        background-position: right 2px;
+    }
+    .i_false{
+        background-position: right -26px;
+    }
+}
+.radio, .checkbox {
+    display: block;
+    min-height: 20px;
+    margin-top: 0px;
+    margin-bottom: 6px;
+    padding-left: 20px;
+    vertical-align: middle;
+}
+.checkbox input[type="checkbox"] {
+    float: left;
+    margin-left: -20px;
+}
+.btn {
+    display: inline-block;
+    margin-bottom: 0;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none;
+    border: 1px solid transparent;
+    white-space: nowrap;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.428571429;
+    user-select: none;
+    background-color: #0099F1;
+    width: 340px;
+    border-bottom: #0083ce 2px solid;
+    color: #fff;
+    font: 16px "microsoft yahei";
+    border-radius: 1px;
+}
+.a_yhd, .a_zfb, .a_qq, .a_sina, .a_wlt, .a_wy, .a_wx {
+    background: url(http://s.maiyaole.com/images/201306/images/private/img_zhifu.png) no-repeat left top;
+    display: block;
+    float: left;
+    height: 39px;
+    margin-right: 18px;
+    width: 39px;
+    border: none;
+}
+.tellnumber, .u_ps, .u_name, .u_email, .i_empty, .i_true, .i_false {
+    background: url(http://s.maiyaole.com/images/passport/regest.png) no-repeat 0 0;
+}
+.i_empty, .i_true, .i_false {
+    height: 16px;
+    width: auto;
+    float: right;
+    padding-right: 25px;
+    margin-top: -28px;
+}
+.hz_login {
+    padding-bottom: 15px;
+    clear: both;
+    overflow: hidden;
+    zoom: 1;
+    p{
+        margin-top: 10px;
+        line-height: 24px;
+        color: #5e5e5e;
+    }
+    a{
+        line-height: 24px;
+        color: #a5a5a5;
+        text-indent: -9999px;
+    }
+    
+    .first{
+        padding-left: 0;
+    }
+    .a_wx{
+        background-position: -294px 0;
+    }
+    .a_zfb {
+        background-position: -48px 0;
+    }
+    .a_qq {
+        background-position: -95px 0;
+    }
+}
+.moreWebDiv {
+    cursor: pointer;
+    display: inline-block;
+    float: right;
+    margin-right: 27px;
+    margin-top: -52px;
+    position: relative;
+    z-index: 100;
+    .moreWeb {
+        cursor: pointer;
+        float: right;
+        display: block;
+        margin-right: 11px;
+        margin-top: 10px;
+        .moreWebBtn {
+            cursor: pointer;
+            width: 15px;
+            height: 15px;
+            margin-left: 5px;
+            float: right;
+            border: none;
+            background: url(http://s.maiyaole.com/images/201306/images/private/upanddown.png) no-repeat left top;
+            background-position: -7px -7px;
+        }
+    }
+    .moreTab {
+        display: none;
+        padding-top: 50px;
+        padding-right: 112px;
+    }
+    .a_yhd {
+        background-position: 0 0;
+    }
+    .a_sina {
+        background-position: -143px 0;
+    }
+    .a_wlt {
+        background-position: -241px 0;
+    }
+    .a_wy {
+        background-position: -191px 0;
+    }
+}
+#simplefooter {
+    width: 980px;
+    margin: 50px auto 20px auto;
+    text-align: center;
+    p{
+        display: block;
+        margin-top: 10px;
+    }
+    a{
+        color: #666;
+        margin: 0 8px;
+        &:hover{
+            color: #0083ce;
+            text-decoration: underline;
+        }
+    }
+}

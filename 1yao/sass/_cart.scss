@@ -1,0 +1,482 @@
+.clearfix{
+    &:after{
+        content: '\0020';
+        display: block;
+        height: 0;
+        clear: both;
+    }
+}
+.c_head, .c_content, .c_footer {
+    width: 980px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#logo {
+    padding-bottom: 20px;
+    padding-top: 20px;
+    .logo {
+        color: #0083ce;
+        display: inline-block;
+        font-size: 35px;
+        height: 60px;
+        line-height: 60px;
+        overflow: hidden;
+        position: relative;
+        width: 180px;
+        .i{
+            background: url(http://s.maiyaole.com/images/cart/check_logo.png) no-repeat 0 0;
+            width: 180px;
+            height: 60px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+}
+.c_content {
+    position: relative;
+    
+}
+.flow-steps {
+    position: absolute;
+    right: 0;
+    top: -87px;
+    overflow: hidden;
+    margin: 20px 0;
+    li.current {
+        background-color: #0083ce;
+        color: #fff;
+        font-weight: bold;
+    }
+    .num5{
+        li{
+            width: 175px;
+        }
+    }
+    li{
+        float: left;
+        background: #f3f3f3 url(http://s.maiyaole.com/images/cart/followstep.png) no-repeat right top;
+        font-size: 12px;
+        height: 32px;
+        line-height: 32px;
+        text-align: center;
+        padding: 0 15px 0 0;
+        overflow: hidden;
+    }
+    .last{
+        background-image: none;
+    }
+}
+.cart-first-bar {
+    font-family: "Microsoft YaHei";
+    padding: 0 0 6px 0;
+    line-height: 20px;
+    height: 20px;
+    li{
+        vertical-align: middle;
+    }
+    .mycarttitle{
+        color: #0083CE;
+        font-size: 18px;
+        float: left;
+        cursor: pointer;
+        padding-bottom: 5px;
+    }
+    .cart_note {
+        color: #a5a5a5;
+        float: right;
+    }
+}
+.cart_pay {
+    float: right;
+    margin-left: 3px;
+    width: 38px;
+    height: 20px;
+    a{
+        width: 38px;
+        float: right;
+        height: 20px;
+        line-height: 120px;
+        overflow: hidden;
+        display: inline-block;
+        background: url(http://s.maiyaole.com/images/cart/cart.png)no-repeat;
+        background-position: -15px -20px;
+    }
+}
+.cart-main {
+    position: relative;
+}
+.cart-table-th {
+    margin-bottom: 10px;
+    height: 34px;
+    border: 1px solid #ececec;
+    .wp{
+        height: 34px;
+        line-height: 34px;
+        background: #f3f3f3;
+        color: #666;
+    }
+    .th{
+        float: left;
+        text-align: center;
+    }
+    .th-chk {
+        width: 62px;
+        font-size: 12px;
+        color: #696969;
+        text-align: left;
+    }
+    .th-item {
+        width: 290px;
+        border-left: 0;
+    }
+    .td-price, .th-price {
+        width: 100px;
+    }
+    .td-amount, .th-amount {
+        width: 115px;
+    }
+    .td-weight, .th-weight {
+        width: 70px;
+    }
+    .th-location {
+        width: 137px;
+    }
+    .td-sum, .th-sum {
+        width: 115px;
+    }
+    .td-op, .th-op {
+        width: 89px;
+    }
+}
+.select-all {
+    cursor: pointer;
+    .cart-checkbox {
+        margin-top: 12px;
+    }
+}
+.cart-checkbox {
+    margin: 0 8px 0 10px;
+    position: relative;
+    width: 13px;
+    height: 13px;
+    float: left;
+    input {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 13px;
+        height: 13px;
+        z-index: 0;
+        padding: 0;
+        margin: 0;
+    }
+    span{
+        cursor: pointer;
+        height: 13px;
+        line-height: 200em;
+        background: url(http://s.maiyaole.com/images/cart/icon_cart.png) no-repeat left -87px;
+        overflow: hidden;
+        position: absolute;
+        width: 13px;
+        z-index: 1;
+    }
+}
+.cart-checkbox-selected{
+    span {
+        background: url(http://s.maiyaole.com/images/cart/icon_cart.png) no-repeat left -62px;
+    }
+}
+.orderHolder {
+    border: 1px solid #dbdbdb;
+    background-color: #f3f3f3;
+    margin-bottom: 10px;
+}
+.itemHeShop {
+    border-bottom: 1px solid #ececec;
+    line-height: 37px;
+    font-size: 14px;
+    .cart-checkbox {
+        margin: 13px 8px 0 10px;
+    }
+    .makePoint {
+        color: #666;
+    }
+}
+.fare_cost {
+    float: right;
+    margin-right: 20px;
+    font-size: 12px;
+    color: #767676;
+    .to_cd {
+        font-weight: bold;
+        color: #e82b21;
+    }
+}
+.red {
+    color: #e71a0f !important;
+}
+.blue {
+    color: #0083ce !important;
+}
+.item-body{
+    background-color: #eaf9ff;
+}
+.item-content {
+    display: none;
+    border-bottom: 1px solid #d1e9f2;
+    .td{
+        float: left;
+        min-height: 82px;
+    }
+    .td-chk {
+        text-align: left;
+        position: relative;
+        width: 44px;
+    }
+    .td-item {
+        width: 308px;
+        .item-info {
+            float: left;
+            padding: 0 15px 0 11px;
+            width: 220px;
+        }
+    }
+    .td-inner {
+        padding-top: 16px;
+        .cart-checkbox {
+            margin-top: 15px;
+        }
+    }
+    .item-pic {
+        width: 60px;
+        height: 60px;
+        float: left;
+        margin-top: -6px;
+        overflow: hidden;
+        a{
+            display: table-cell;
+            width: 60px;
+            height: 60px;
+            vertical-align: middle;
+            text-align: center;
+        }
+        img{
+            width: 100%;
+        }
+    }
+    .item-title {
+        color: #333;
+        font-size: 12px;
+        line-height: 20px;
+        margin-top: -2px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    .td-price, .th-price {
+        width: 100px;
+    }
+    
+    .td-price{
+        text-align: center;
+        em{
+            font-family: arial;
+            font-style: normal;
+            margin-right: 1px;
+        }
+    }
+    .td-amount {
+        height: 21px;
+        overflow: hidden;
+        margin: 0 auto;
+        position: relative;
+        width: 90px;
+        overflow: visible;
+    }
+    .td-amount, .th-amount {
+        width: 115px;
+    }
+    
+    .btn-reduce,.btn-plus{
+        width: 21px;
+        height: 21px;
+        margin: 0 2px 0 2px;
+        border: none;
+        background-color: transparent;
+        background-image: url(http://s.maiyaole.com/images/cart/icon_cart.png);
+        vertical-align: top;
+        cursor: pointer;
+    }
+    .btn-reduce {
+        background-position: 0 0;
+    }
+    .btn-plus {
+        background-position: 0 -28px;
+    }
+    .text-amount {
+        width: 30px;
+        height: 15px;
+        line-height: 15px;
+        border: 1px solid #e6e6e6;
+        color: #333;
+        text-align: center;
+        padding: 2px 0;
+        background-color: #fff;
+        z-index: 2;
+    }
+    .item-amount {
+        height: 21px;
+        overflow: hidden;
+        margin: 0 auto;
+        position: relative;
+        width: 90px;
+    }
+    .td-weight, .th-weight {
+        width: 70px;
+    }
+    .td-location, .th-location {
+        width: 137px;
+    }
+    .td-location {
+        text-align: center;
+        color: #a5a5a5;
+    }
+    .td-sum, .th-sum {
+        width: 115px;
+        em{
+            font-family: arial;
+            font-style: normal;
+            margin-right: 1px;
+        }
+    }
+    .td-op, .th-op {
+        width: 89px;
+        text-align: center;
+        a{
+            color: #a5a5a5;
+            display: block;
+        }
+    }
+}
+.dianzongji {
+    padding: 10px 0;
+    width: auto;
+    float: right;
+    li{
+        float: left;
+        width: 78px;
+        text-align: center;
+        line-height: 1.7;
+        color: #666;
+        span{
+            display: block;
+            font-weight: bold;
+        }
+    }
+}
+.float_bar {
+    padding: 0 15px 0 0;
+    text-align: right;
+    border: 1px solid #e6e6e6;
+    bottom: 0;
+    z-index: 1000;
+    width: 963px;
+    background-color: #f8f8f8;
+    color: #5e5e5e;
+    .cartOperation {
+        float: left;
+        padding: 24px 10px 0 0;
+        line-height: 1.5;
+        margin-bottom: 0;
+        height: 36px;
+        li{
+            float: left;
+            margin-right: 10px;
+            color: #5e5e5e; 
+            .cart-checkbox {
+                margin-top: 3px;
+            }
+        }
+        
+    }
+    span{
+        left: 0;
+    }
+    .pay_bar {
+        float: left;
+    }
+}
+.price_check_box.addsty {
+    width: 470px;
+}
+.price_check_box {
+    text-align: left;
+    overflow: hidden;
+    zoom: 1;
+    .item{
+        padding-top: 24px;
+        margin-right: 15px;
+        font-family: arial;
+        float: left;
+        line-height: 1.3;
+        .t{
+            font-size: 12px;
+            font-family: tahoma,arial,'Hiragino Sans GB',\5b8b\4f53,sans-serif;
+            line-height: 1.5;
+        }
+    }
+    .total_item{
+        font-family: "Microsoft YaHei",tahoma,arial;
+        font-size: 16px;
+        line-height: 42px;
+        color: #a5a5a5;
+        padding: 12px 0 0 10px;
+        b{
+            color: #e71a0f;
+            font-family: arial;
+            font-weight: normal;
+            margin-left: 10px;
+        }
+        span{
+            color: #e71a0f;
+            font-family: arial;
+            font-size: 18px;
+            font-weight: bold;
+            vertical-align: top;
+        }
+    }
+}
+.c_pay {
+    padding-top: 10px;
+    float: right;
+    li.wrap_btn {
+        padding-top: 2px;
+    }
+    li{
+        float: right;
+        font-size: 16px;
+        color: #a5a5a5;
+    }
+}
+.btn_order {
+    background-color: #e71a0f;
+    display: inline-block;
+    width: 135px;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    font-size: 18px;
+    font-family: "Microsoft YaHei",tahoma,arial;
+    font-weight: bold;
+    border-bottom: 3px solid #aa0000;
+    overflow: hidden;
+    vertical-align: middle;
+    color: #fff;
+}
+.btn_order.goshopping {
+    color: #E41C0C;
+    border: 1px solid #E41C0C;
+    background: #fff;
+    font-weight: normal;
+    height: 39px;
+}

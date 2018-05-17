@@ -1,0 +1,510 @@
+%clearboth{
+    height: 0;
+    visibility: hidden;
+    content: ".";
+    display: block;
+    clear: both;
+};
+%floatleft{
+    display: inline;
+    float: left;
+}
+%floatright{
+    display: inline;
+    float: right;
+}
+%wrap{
+    margin: 0 auto;
+    width: 990px;
+}
+#topCurtain{
+    img{
+        width: 990px;
+    }
+}
+.allSort{
+    .sortbox{
+        ul{
+            display: none;
+        }
+    }
+}
+.site-nav {
+    display: block;
+    .site-nav-bd {
+        margin: 0 auto;
+        width: 990px!important;
+        height: 36px;
+        background: #f1f1f1;
+    }
+    .menu{
+        &:hover{
+            .province_name{
+                background-color: #fff;
+            }
+            
+        }
+        .myyaowang{
+            background-position: right 17px!important;
+            &:hover{
+                background-position: right -8px!important;
+            }
+        }
+        .tellnumber{
+            background: none;
+        }
+        .tell_title{
+            left: -11px!important;
+        }
+        #menu_bd_app{
+            left: -70px!important;
+        }
+    }
+    .site-nav-bd .province_name {
+        font-family: Arial;
+        border: 0;
+        background-color: #f1f1f1;
+        font-weight: 100;
+        background: none;
+    }
+}
+
+.site_head{
+    .mod_search{
+        width: 585px!important;
+        .searchForm{
+            width: 387px!important;
+            .combobox-placeholder{
+                width: 290px!important;
+            }
+            #word{
+                width: 290px!important;
+            }
+            
+        }
+    }
+    .erDCode{
+        display: none!important;
+    }
+}
+.head_wrap{
+    .mod_minicart{
+        right: -858px!important;
+    }
+    .headerNavMain{
+        width: 990px!important;
+    }
+}
+.allSort{
+    .more{
+        background-image: url(http://s.maiyaole.com/images/201306/images/common_sprite.png?t==20141218)!important;
+        
+    }
+}
+.sitenav{
+    width: 980px;
+    padding-left: 190px!important;
+    .s_m{
+        a{
+            padding: 0 7px!important;
+        }
+    }
+    .s_app{
+        .nav_link{
+            padding: 0 12px 0 5px!important;
+        }
+            
+    }
+}
+.xq_nav{
+    @extend %wrap;
+    &:after{
+        @extend %clearboth;
+    }
+    .detailnav{
+        border-bottom: 0;
+        padding: 10px 0 18px;
+        position: relative;
+        a{
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        .linkhome{
+            background: url(http://s.maiyaole.com/images/201306/img/yw_home.png) no-repeat scroll 0 -2px transparent;
+            display: inline-block;
+            padding-left: 25px;
+        }
+        .arrow {
+            font-family: "宋体";
+            margin: 0 8px;
+        }
+        
+    }
+}
+.wrap_detail{
+    @extend %wrap;
+    &:after{
+        @extend %clearboth;
+    }
+    .detail_top {
+        margin-bottom: 10px;
+        .sideleft {
+            padding-bottom: 10px;
+            margin-right: 18px;
+            float: left;
+            width: 300px;
+            position: relative;
+            z-index: 12;
+            .pic{
+                border: none;
+                height: 298px;
+                text-align: center;
+                width: 298px;
+            }
+        }
+        .pic{
+            a{
+                display: block;
+            }
+        }
+        .middle_property {
+            float: left;
+            width: 465px;
+            h1{ 
+                margin: 0;
+                margin-bottom: 10px;
+                font-size: 17px;
+                font-weight: 700;
+                font-family: 'microsoft yahei';
+            }
+            .red {
+                color: #e54948!important;
+            }
+        }
+        .shangpin_info{
+            line-height: 1.2;
+            vertical-align: bottom;
+            dl {
+                padding-bottom: 15px;
+                line-height: 20px;
+                &:after{
+                    @extend %clearboth;
+                }
+            }
+        }
+        
+    }
+    .right_property{
+        float: right;
+        width: 189px;
+        border: 1px solid #e6e6e6;
+        h3.h3blue{
+            padding: 9px 13px;
+            line-height: 1.5;
+            background-color: #0083ce;
+            font-size: 14px;
+            color: #fff;
+            font-weight: 400;
+            margin: -1px -1px 0;
+            span{
+                font-weight: 700;
+                display: block;
+            }
+            a{
+                color: #fff;
+                &:hover{
+                    text-decoration: underline;
+                }
+            }
+        }
+        .fixed_property{
+            .erweima{
+                padding: 13px 10px;
+                overflow: hidden;
+                zoom: 1;
+            }
+        }
+        .d_app {
+            text-align: center;
+            font-weight: 700;
+        }
+        .erwei_img{
+            text-align: center;
+            img{
+                width: 120px!important;
+                height: 120px!important;
+            }
+        }
+    }
+    .sideleft {
+        .pic{
+            border: none;
+            height: 298px;
+            text-align: center;
+            width: 298px;
+            a{
+                outline-style: none;
+                cursor: crosshair;
+                position: relative;
+                height: 298px;
+                width: 298px;
+                text-decoration: none;
+            }
+            .zoomPad {
+                position: relative;
+                float: left;
+                z-index: 90;
+                cursor: crosshair;
+            }
+            #productImg{
+                height: 298px;
+                width: 298px;
+            }
+            .zoomPup{
+                overflow: hidden;
+                background-color: #FFF;
+                opacity: .6;
+                z-index: 120;
+                position: absolute;
+                border: 1px solid #CCC;
+                z-index: 101;
+                cursor: crosshair;
+                width: 141px;
+                height: 141px;
+                display: none;
+            }
+        }
+    }
+    .zoomWindow{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 300px !important;
+        background: #FFF;
+        height: auto;
+        .zoomWrapper {
+            position: relative;
+            border: 1px solid #999;
+            z-index: 110;
+            width: 380px;
+        }
+        .zoomWrapperImage {
+            display: block;
+            position: relative;
+            overflow: hidden;
+            z-index: 9999;
+            height: 380px;
+            img{
+                border: 0;
+                width: 800px;
+                height: 800px;
+                display: block;
+                position: absolute;
+                z-index: 101;
+            }
+        }
+    }
+}
+.middle_property{
+    .shangpin_info{
+        line-height: 1.2;
+        vertical-align: bottom;
+        dl{
+            &:after{
+                @extend %clearboth;
+            }
+            padding-bottom: 15px;
+            line-height: 20px;
+            dt{
+                padding-top: 12px;
+                line-height: 22px;
+            }
+            dd{
+                padding: 0 0 0 6px;
+            }
+        }
+        .good_price{
+            margin-right: 0;
+            color: #e72418;
+            font-weight: 400;
+            display: block;
+            float: left;
+            line-height: 22px;
+            padding-top: 6px;
+            padding-right: 6px;
+            font-size: 24px;
+        }
+    }
+}
+.detail_top{
+     .shangpin_info{
+         dl{
+            padding-bottom: 15px;
+            line-height: 20px;
+            &:after{
+                @extend %clearboth;
+            }
+         }
+        dt{
+            float: left;
+            width: 55px;
+            clear: left;
+            text-align: right;
+            line-height: 36px;
+        }
+        dd{
+            padding: 0 0 0 6px;
+            .num_section {
+                position: relative;
+            }
+            input.num{
+                width: 73px;
+                height: 38px;
+                line-height: 38px;
+                padding: 0 5px;
+                border: 1px solid #e6e6e6;
+                font-size: 14px;
+            }
+            p.proTips {
+                margin-top: 20px;
+                color: #999;
+            }
+        }
+        .btnCartDl{
+            dd {
+                padding: 0;
+            }
+        }
+     }
+     .num_box {
+        position: relative;
+        width: 106px;
+        float: left;
+        z-index: 10;
+        .num_pre {
+            background-position: -131px -842px;
+            height: 19px;
+            width: 19px;
+            display: block;
+            position: absolute;
+            right: 0;
+            top: 0;
+            border: none;
+            cursor: pointer;
+            background-image: url(http://s.maiyaole.com/images/product/icon_detail.png?t==20141219);
+            
+        }
+        .num_next {
+            background-position: -131px -863px;
+            height: 19px;
+            width: 19px;
+            display: block;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            border: none;
+            cursor: pointer;
+            background-image: url(http://s.maiyaole.com/images/product/icon_detail.png?t==20141219);
+            
+        }
+    }
+    .btn_shopping_cart{
+        &:hover{
+            background-color: #d80000;
+            border-bottom: 3px solid #d80000;
+        }
+        background-color: #e72418;
+        background-position: 50px -763px;
+        background-repeat: no-repeat;
+        border: 0 solid #9a0900;
+        padding: 0 60px 0 90px;
+        border-bottom: 3px solid #9a0900;
+        color: #fff;
+        font-size: 18px;
+        cursor: pointer;
+        height: 53px;
+        vertical-align: top;
+        background-image: url(http://s.maiyaole.com/images/product/icon_detail.png?t==20141219);
+        font-family: 'microsoft yahei';
+        outline: 0;
+    }
+    .sideleft{
+        .picbox{
+            margin-top: 10px;
+            margin-left: 10px;
+            width: 285px;
+        
+        }
+    } 
+    .imgpreview,.imgnext{
+        font-family: 'microsoft yahei';
+        background-image: url(http://s.maiyaole.com/images/product/icon_detail.png?t==20141219);
+    }
+    .imgpreview {
+        cursor: pointer;
+        height: 45px;
+        width: 12px;
+        background-position: -3px -500px;
+        float: left;
+    }
+    .imgnext {
+        cursor: pointer;
+        height: 45px;
+        width: 12px;
+        background-position: -125px -500px;
+        float: right;
+    }
+    .dt_scrollable {
+        width: 257px;
+        height: 60px;
+        overflow: hidden;
+        position: relative;
+        
+        
+    }
+    #sliderImgs {
+        margin-top: 0;
+        &:after{
+            @extend %clearboth;
+        }
+    }
+    ul#thumblist {
+        display: block;
+        width: 1000px;
+        padding-left: 1px;
+        &:after{
+            @extend %clearboth;
+        }
+        li{
+            width: 50px;
+            height: 50px;
+            float: left;
+            margin-right: 1px;
+            img{
+                border: 1px solid #e6e6e6;
+                margin-left: 1px;
+                position: relative;
+                width: 49px;
+                height: 49px;
+                display: block;
+            }
+        }
+    }
+    
+}
+#gallery_view {
+    padding-bottom: 10px;
+}
+.detail_self {
+    float: left;
+    margin-right: 6px;
+    margin-top: 2px;
+    font-size: 15px;
+    line-height: 21px;
+    text-align: center;
+    width: 39px;
+    height: 21px;
+    background-image: url(http://s.maiyaole.com/images/common/activity/detail_saleSelf.png);
+    color: #0193e8;
+}
