@@ -1,4 +1,5 @@
 require.config({ 
+//	baseUrl:'',//共有的路径
 	paths:{
 		'jquery':'http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min',//去掉扩展名。
 		'jquerycooike':'jquery.cookie',

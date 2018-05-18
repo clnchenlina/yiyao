@@ -181,6 +181,9 @@
         width: 13px;
         z-index: 1;
     }
+    .bgchange{
+        background-position-y: -87px;
+    }
 }
 .cart-checkbox-selected{
     span {
@@ -389,13 +392,15 @@
         line-height: 1.5;
         margin-bottom: 0;
         height: 36px;
-        li{
+        li{ 
             float: left;
             margin-right: 10px;
             color: #5e5e5e; 
             .cart-checkbox {
                 margin-top: 3px;
+                
             }
+            
         }
         
     }

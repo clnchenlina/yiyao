@@ -48,8 +48,8 @@
 							<div class="select-all J_SelectAll">
 	                            <label>
 	                                <label class="cart-checkbox  cart-checkbox-selected  ">
-	                                    <input type="checkbox"  name="allselect" autocomplete="off" checked="checked">
-	                                    <span>勾选此店铺下所有商品</span>
+	                                    <input type="checkbox" id="checkall" name="allselect" autocomplete="off" checked="checked">
+	                                    
 	                                </label>
 	                                	全选
 	                            </label>
@@ -66,12 +66,8 @@
 				</div>
 				<div class="orderHolder">
 					<div class="itemHeShop clearfix">
-                    	<label class="cart-checkbox  cart-checkbox-selected  ">
-                        	<input type="checkbox" name="allselect" autocomplete="off" checked="checked">
-                        	<span>勾选此店铺下所有商品</span>
-                    	</label>
                     	<a class="makePoint" title="1药网" href="javascript:;" style="float:left">1药网</a>
-                        <span class="fare_cost">
+                        <!--<span class="fare_cost">
                             <span class="text">仅差
                                 <strong class="red">
                                   	<b>¥</b>70.50
@@ -80,15 +76,14 @@
                             </span>
                             
                             <a id="coudanDiv" class="to_cd" href="javascript:;">去凑单&gt;</a>
-                        </span>
+                        </span>-->
                 	</div>
                 	<div class="item-body clearfix  ">
                 		<ul class="item-content clearfix">
                 			<li class="td td-chk">
                 				<div class="td-inner">
                 					<label class="cart-checkbox cart-checkbox-selected ">
-                                        <input type="checkbox" onclick="checkItemStatus(this);" value="972682" itype="1" name="cart2Checkbox" autocomplete="off" checked="true">
-                                        <span>勾选此店铺下所有商品</span>
+                                        <input type="checkbox"   autocomplete="off" checked="true">
                                     </label>
                 				</div>
                 			</li>
@@ -136,9 +131,9 @@
                 	</div>
                 	<div class="clearfix">
                 		<ul class="dianzongji">
-                			<li>运费<span class="red"><b>¥</b>10.00</span></li>
-                			<li>优惠<span class="red"><b>¥</b>0.00</span></li>
-                			<li>商品金额<span class="red"><b>¥</b>8.50</span></li>
+                			<li>运费<span class="red yf">¥10.00</span></li>
+                			<li>优惠<span class="red yh">¥0.00</span></li>
+                			<li>商品金额<span class="red zj">¥8.50</span></li>
                 		</ul>
                 	</div>
 				</div>
@@ -147,8 +142,7 @@
 				<ul class="cartOperation">
 		            <li>
 		                <label class="cart-checkbox  cart-checkbox-selected  ">
-		                    <input type="checkbox" name="allselect" autocomplete="off" checked="checked">
-		                    <span>勾选此店铺下所有商品</span>
+		                    <input type="checkbox" name="allselect" autocomplete="off" checked="checked" id="checkall">
 		                </label>
 		                	全选
 		            </li>

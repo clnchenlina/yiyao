@@ -20,3 +20,4 @@
 		function delCookie(key,value){
 			addCookie(key,value,-1);//添加的函数,将时间设置为过去时间
 		}
+

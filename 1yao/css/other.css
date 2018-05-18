@@ -2303,6 +2303,9 @@ body {
   width: 13px;
   z-index: 1;
 }
+.cart-checkbox .bgchange {
+  background-position-y: -87px;
+}
 
 .cart-checkbox-selected span {
   background: url(http://s.maiyaole.com/images/cart/icon_cart.png) no-repeat left -62px;

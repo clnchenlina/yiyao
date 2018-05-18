@@ -245,13 +245,13 @@ define(['jquery'],function(){//第三方框架直接引用
 				
 				let ggimg='';
 				$.each(goods.info1, function(i) {
-					ggimg+=`<a href="xq.html?goodsid=${goods.info1[i].ggimggoods}"><img src="${goods.info1[i].ggimg}"></img></a>`
+					ggimg+=`<a target="_blank" href="xq.html?goodsid=${goods.info1[i].ggimggoods}"><img src="${goods.info1[i].ggimg}"></img></a>`
 				});
 				$('.specialAds').append(ggimg);//
 				
 				let ggimg2='';
 				$.each(goods.info2, function(i) {
-					ggimg2+=`<a href="xq.html?goodsid=${goods.info2[i].ggimggoods}"><img src="${goods.info2[i].ggimg}"></img></a>`
+					ggimg2+=`<a target="_blank" href="xq.html?goodsid=${goods.info2[i].ggimggoods}"><img src="${goods.info2[i].ggimg}"></img></a>`
 				});
 				$('.sale .sale_ads').append(ggimg2);
 				$('.sale .sale_ads a:last-child').children().addClass('last');
@@ -259,10 +259,10 @@ define(['jquery'],function(){//第三方框架直接引用
 				let ggimg3='';
 				$.each(goods.info3, function(i) {
 					ggimg3+=`<li>
-								<a href="xq.html?goodsid=${goods.info3[i].goodsid}">
+								<a target="_blank" href="xq.html?goodsid=${goods.info3[i].goodsid}">
 									<img src="${goods.info3[i].ggimg}"></img>
 								</a>
-								<a href="xq.html?goodsid=${goods.info3[i].goodsid}">${goods.info3[i].goodsname}</a>
+								<a target="_blank" href="xq.html?goodsid=${goods.info3[i].goodsid}">${goods.info3[i].goodsname}</a>
 								<p>
 									<i>¥</i>${goods.info3[i].price}
 								</p>
