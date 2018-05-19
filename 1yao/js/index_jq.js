@@ -1,10 +1,10 @@
 require.config({ 
-	baseUrl:'http://apps.bdimg.com/libs/',//共有的路径
 	paths:{
-		'jquery':'jquery/2.1.4/jquery.min',//去掉扩展名。
+		'jquery':'http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min',//去掉扩展名。
+		'jquerycooike':'jquery.cookie',
 	}
 });
-define(['jquery'],function(){//第三方框架直接引用
+define(['jquery','jquerycooike'],function(){//第三方框架直接引用
 	return {
 		init:function(){
 			/*--safe_warm--*/
@@ -80,8 +80,6 @@ define(['jquery'],function(){//第三方框架直接引用
 			$('.fri_tit2').on('mouseover',function(){
 				$('.friendly').show().siblings('div').hide();
 			});
-			
-			
 		},
 		nav:function(){
 			/*--classify--*/
@@ -96,12 +94,11 @@ define(['jquery'],function(){//第三方框架直接引用
 				}).done(function(d){//成功
 					var twoclassifyname=d.info2;
 					var sanclassifyname=d.info3;
-					console.log(d);
 					let twoclassify=`<div class="category"><div class="mode-bd"><dl>
 					<dt>${twoclassifyname[0].classifyname}</dt><dd>`
 					$.each(sanclassifyname,function(i){
-						twoclassify+=`<em><a>
-										${sanclassifyname[i].classifyname3}
+						twoclassify+=`<em><a>                                                                                                                                                                                                                                                                                                                                                                                                        
+										${sanclassifyname[i].classifyname}
 										</a></em>`;
 					
 					})
@@ -279,8 +276,8 @@ define(['jquery'],function(){//第三方框架直接引用
 			
 		},
 		smalllunbo:function(lunnum){
-			var $lunnum=$(lunnum)
-			var $img = $lunnum.find('.sale_slider a')//移动的图片
+			var $lunnum=$(lunnum);
+			var $img = $lunnum.find('.sale_slider a');//移动的图片
 		    var $btn = $lunnum.find('.sale_slider .y_slide_a');//按钮
 		    var $qindex = 0; //前一个索引
 		    var $index = 0; //当前索引
@@ -346,9 +343,6 @@ define(['jquery'],function(){//第三方框架直接引用
 			 }
 			
 		},
-			
-		    
-		
 		louti:function(){
 			var $louti=$('#elevator_n');
     		var $loutili=$('#elevator_n ul li');
@@ -389,6 +383,57 @@ define(['jquery'],function(){//第三方框架直接引用
     			});
 			})
 			
+		},
+		cart:function(){
+			kong();
+			var sidarr = [];
+			var numarr = [];
+			var num=0;
+			if (getCookie('cartsid') && getCookie('cartnum')) {//检测cookie，存在添加到购物车
+			    var s = getCookie('cartsid').split(',');//存放cartsid数组
+			    $.each(s,function(i){
+			    	num++;
+			    	createcart(s[i]);
+			    })
+			    $('.checkout_box p').find('.goodsnum').html(num);
+			    
+			}
+			$('.mod_minicart').find('em').html(num);
+			$('.float_box').find('.f_wei i').html(num);
 		}
+	}
+	function createcart(s){
+		$.ajax({
+	        url:'http://127.0.0.1/js/1yao/php/cart.php',
+	        dataType:'json'
+	   }).done(function(data) {
+	    	$.each(data, function(i) {
+	    		if (s == data[i].goodsid) {//sid和数据里面goodsid匹配
+	                var $clone = $('.list_detail li:hidden').clone(true);//对隐藏的模块进行克隆
+	                //拼接
+	                $clone.find('.pro_img').find('img').attr('src', data[i].ggimg).attr('id',data[i].goodsid);
+	                $clone.find('.pro_name').html(data[i].goodsname);
+	                $clone.find('.pro_price').html('¥'+data[i].price);
+	                $clone.css('display', 'block');//克隆的模块是隐藏，显示出来。
+	                $('.list_detail ul').append($clone);//追加
+	            }
+	    	});
+	    });
+	}
+	function totalprice () {
+		var total=0;
+		$('.item-content:visible').each(function(){
+			total += parseFloat($(this).find('.td-sum span').html());
+		});
+		$('.dianzongji .zj').html('¥'+total.toFixed(2));
+	}
+	function kong () {
+		if (getCookie('cartsid')) {
+			$('.checkout_box').show();
+	        $('.none_tips').hide();
+	  } else {
+			$('.checkout_box').hide();
+	        $('.none_tips').show();
+	    }
 	}
 });

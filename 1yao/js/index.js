@@ -17,4 +17,5 @@ require(['js/index_jq.js'],function(m1){
 	m1.smalllunbo('.floor_10');
 	m1.louti();
 	m1.backtotop();
+	m1.cart();
 });

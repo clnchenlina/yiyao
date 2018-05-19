@@ -5,6 +5,7 @@ $(function(){
 	check('.cartOperation #checkall');//下面的全选（两个全选不在同一个父级里）
 	totalprice ();
 	checkedtotalprice();
+	kong ();
 	if (getCookie('cartsid') && getCookie('cartnum')) {//检测cookie，存在添加到购物车
 	    var s = getCookie('cartsid').split(',');//存放cartsid数组
 	    var n = getCookie('cartnum').split(',');//存放数量数组
@@ -80,8 +81,6 @@ $(function(){
 		alert('删除成功');
 	});
 	
-	
-	
 	function createcart(sid, num) {//sid：商品编号  num:商品的数量，添加商品
 	    $.ajax({
 	        url:'http://127.0.0.1/js/1yao/php/cart.php',
@@ -103,7 +102,6 @@ $(function(){
 	            }
 	    	});
 	    });
-	    
 	}
 	function getcookievalue(){//获取cookie的值，转成数组
 		if(getCookie('cartsid')){//cartsid：cookie里面id的名称
@@ -143,6 +141,7 @@ $(function(){
 		addCookie('cartnum', numarr.toString(), 7);//覆盖原来的num数组
 		totalprice();
 		checkedtotalprice();
+		kong();
 	}
 	function totalprice () {
 		var total=0;
@@ -159,5 +158,16 @@ $(function(){
 			}
 		});
 		$('.pay_bar .total_item span').html(total.toFixed(2));
+	}
+	function kong () {
+		if (getCookie('cartsid')) {
+			$('.cart-main').show();
+			$('.float_bar').show();
+	        $('.empty_box').hide();
+	    } else {
+	    	$('.cart-main').hide();
+			$('.float_bar').hide();
+	        $('.empty_box').show();
+	    }
 	}
 });

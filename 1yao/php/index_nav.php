@@ -7,12 +7,7 @@
 			right join twoclassify
 			on classify.classifyid=twoclassify.oneclassifyid 
 	       	";
-	$query3="
-			select twoclassify.classifyname,sanclassify.classifyname3 from sanclassify
-			join twoclassify
-			on twoclassify.classifyid=sanclassify.twoclassifyid 
-			LIMIT 6;
-	       	";
+	$query3="select * from sanclassify";
 	
 	
 	$result1=mysql_query($query1);

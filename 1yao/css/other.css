@@ -1469,7 +1469,6 @@ body {
   background: #fff;
 }
 .head_wrap .mod_minicart .list_detail ul {
-  display: none;
   width: 348px;
   margin: 0 1px;
   max-height: 329px;
@@ -1477,6 +1476,55 @@ body {
   position: relative;
   overflow-x: hidden;
   overflow-y: auto;
+}
+.head_wrap .mod_minicart .list_detail li {
+  display: none;
+  width: 328px;
+  height: 40px;
+  padding: 10px 10px;
+  border-bottom: 1px solid #f3f3f3;
+  position: relative;
+  z-index: 999;
+}
+.head_wrap .mod_minicart .list_detail a.pro_img {
+  float: left;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #e4e4e4;
+  margin-right: 5px;
+}
+.head_wrap .mod_minicart .list_detail a.pro_name {
+  float: left;
+  line-height: 20px;
+  width: 130px;
+  height: 40px;
+  overflow: hidden;
+}
+.head_wrap .mod_minicart .list_detail .pro_price {
+  float: left;
+  color: #d00;
+  line-height: 20px;
+  margin-left: 10px;
+  margin-right: 6px;
+  font-weight: 700;
+  font-family: Arial,Helvetica,sans-serif;
+  width: 60px;
+  height: 40px;
+  overflow: hidden;
+}
+.head_wrap .mod_minicart .list_detail a.checkout_btn {
+  width: 70px;
+  height: 27px;
+  line-height: 28px;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: 12px;
+  display: inline-block;
+  margin-top: 10px;
+  background-color: #e72418;
+  border-bottom: #c60000 1px solid;
+  border-radius: 1px;
 }
 .head_wrap .mod_minicart .none_tips {
   height: 76px;
@@ -1500,6 +1548,17 @@ body {
 }
 .head_wrap .mod_minicart .none_tips a:hover {
   color: #e54948;
+}
+.head_wrap .list_detail a img {
+  width: 40px;
+}
+.head_wrap .checkout_box .fl {
+  float: left;
+}
+.head_wrap .checkout_box em.fstrong {
+  color: #d00;
+  font-style: normal;
+  font-weight: 700;
 }
 
 /*---浜岀骇瀵艰埅----*/
@@ -2613,6 +2672,60 @@ body {
   background: #fff;
   font-weight: normal;
   height: 39px;
+}
+
+.empty_box {
+  border-top: #a5a5a5 2px solid;
+  background-color: #fff;
+  min-height: 220px;
+  width: 980px;
+  text-align: center;
+}
+.empty_box i {
+  background: url(http://s.maiyaole.com/images/cart/cart.png) no-repeat -9999px -9999px;
+  display: inline-block;
+}
+.empty_box .e_inner_logout {
+  float: none;
+  clear: both;
+  margin: 64px auto 0;
+  width: 320px;
+  overflow: hidden;
+  zoom: 1;
+}
+.empty_box .e_icon {
+  float: left;
+  background-position: -16px -287px;
+  left: 12px;
+  width: 120px;
+  height: 64px;
+  overflow: hidden;
+}
+.empty_box .e_text {
+  float: left;
+  display: inline-block;
+  background-color: #eaf9ff;
+  border: #e6e6e6 1px solid;
+  height: 34px;
+  line-height: 34px;
+  margin: 11px 10px 0 3px;
+  padding: 0 10px;
+}
+.empty_box .e_text .e_tbg {
+  float: left;
+  background-position: 0px -287px;
+  display: inline-block;
+  width: 13px;
+  height: 13px;
+  overflow: hidden;
+  margin-left: -23px;
+  margin-top: 12px;
+}
+.empty_box a {
+  font-weight: 700;
+}
+.empty_box a:hover {
+  text-decoration: underline;
 }
 
 /*# sourceMappingURL=other.css.map */
