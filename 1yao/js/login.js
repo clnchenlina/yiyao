@@ -49,7 +49,7 @@ $(function(){
 		}
 	});
 	$('#vcd').on('blur',function(){
-		if($(this).val()!=$('.verifyimg').html()){
+		if($(this).val().toUpperCase()!=$('.verifyimg').html().toUpperCase()){
 			$(this).next('i').removeClass('i_true');
 			$(this).css('border','red 1px solid').next('i').addClass('i_false').nextAll('span.error').show().css('color','#e72418').html('验证码不正确');
 			bstop=false;
